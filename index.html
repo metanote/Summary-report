@@ -34,7 +34,7 @@
       </div>
 
         <div id="right">
-        <div id="home" class="page"><h2> Présentation du langage scalable</h2>
+        <div id="home" class="page"><h2> Println("Hello Scala")</h2>
         <h3>About Scala</h3>
 
         <img src="img/Martin.jpg" alt ="odersky" >`
@@ -147,7 +147,37 @@
               -déclaration d'un attribut variable modifiable <br>
               -déclaration de parametre de classe : getter and setter implicite
 
-     <h2>Les Traits </h2>
+    <h2>type</h2>
+    <p> en Scala on peut déclarer des types avec le mot <strong>type</strong>
+    exemple type word :String
+        type sentence :List[word]
+    </p>
+
+    <strong>Le path en scala peut être définie de la manière suivante</strong>
+        <p>val directoryPath =List("dossier","fichier")</p>
+        <p>val path = directoryPath.mkString("/")</p>
+
+
+    <h3>A propos de coursera</h3>
+
+    <p>une fois qu'on à toutes le outils bien installer sur notre machine pour programmer en scala est ça c'est bien expliquer sur le site
+    on va recevoir chaque semaine des cours et des exercices, apres la resolution des exercices il est indisponsable de lancer les tests pour voir
+    si notre solution répond bien au besion puis nous pouvons faire un submit pour avoir la note sur 10 de l'exercice comme ci-dessous
+    </p>
+    <pre>
+    > submit monmail@Email.domaine monPWDdeSoumission
+[info] Packaging /Users/Moncef/Programming/Odersky/forcomp/target/scala-2.10/progfun-forcomp_2.10-1.0.0.jar ...
+[info] Done packaging.
+[info] Connecting to coursera. Obtaining challenge...
+[info] Computing challenge response...
+[info] Submitting solution...
+[success] Your code was successfully submitted: Your submission has been accepted and will be graded shortly.
+[success] Total time: 6 s, completed 1 mai 2013 12:08:53
+>
+
+    </pre>
+
+        <h2>Les Traits </h2>
      <p>c'est comme les interfaces en Java sauf qu'on peut implimenter les methodes ; déclaration similaire a une classe avec la possibilité de l'héritage multiple et pas de parametre de classe si non une erreur de compilation</p>
      <pre>
      trait ImageInfo{
@@ -236,12 +266,75 @@
 
          produitScalaire2(Vector(1,3,4),Vector(2,2,2))    //> res9: Double = 16.0
 
+        //produit scalaire version avec for
+
+         def produitScalaireFor(xs:List[Double],ys:List[Double]):Double= (for((x,y) <- xs zip ys )yield (x*y)).sum
+
+                                                         //> produitScalaireFor: (xs: List[Double], ys: List[Double])Double
+
+
+         produitScalaireFor(List(1,3,4),List(2,2,2))      //> res8: Double = 16.0
+
+
+
+      <b>Generer des pairs</b>
+     Avec map vecteur de vecteurs
+     val n=7                                          //> n  : Int = 7
+    ((1 until n) map (i=>
+    (1 until i) map (j =>(i,j))))                     //> res11: scala.collection.immutable.IndexedSeq[scala.collection.immutable.Ind
+                                                      //| exedSeq[(Int, Int)]] = Vector(Vector(), Vector((2,1)), Vector((3,1), (3,2))
+                                                      //| , Vector((4,1), (4,2), (4,3)), Vector((5,1), (5,2), (5,3), (5,4)), Vector((
+                                                      //| 6,1), (6,2), (6,3), (6,4), (6,5)))
+    en applique flatten pour avoir un seul vecteur des pairs
+    val n=7                                          //> n  : Int = 7
+    ((1 until n) map (i=>
+    (1 until i) map (j =>(i,j)))).flatten             //> res11: scala.collection.immutable.IndexedSeq[(Int, Int)] = Vector((2,1), (3
+                                                      //| ,1), (3,2), (4,1), (4,2), (4,3), (5,1), (5,2), (5,3), (5,4), (6,1), (6,2),
+                                                      //| (6,3), (6,4), (6,5))
+
+    la même chose en applique un flatMap au lieu de map flatten
+
+    val n=7                                          //> n  : Int = 7
+    ((1 until n) flatMap (i=>
+    (1 until i) map (j =>(i,j))))                     //> res11: scala.collection.immutable.IndexedSeq[(Int, Int)] = Vector((2,1), (3
+                                                      //| ,1), (3,2), (4,1), (4,2), (4,3), (5,1), (5,2), (5,3), (5,4), (6,1), (6,2),
+                                                      //| (6,3), (6,4), (6,5))
+
+    On applique un filtre pour avoir que les pairs des nombres premiers :
+
+    def isPrime(x:Int):Boolean= (2 until x) forall (p=>x%p!=0)
+                                                           //> isPrime: (x: Int)Boolean
+
+    val n=7                                                 //> n  : Int = 7
+    ((1 until n) flatMap (i=>
+    (1 until i) map (j =>(i,j)))) filter(pair=> isPrime(pair._1+pair._2))
+                                                            //> res11: scala.collection.immutable.IndexedSeq[(Int, Int)] = Vector((2,1), (3
+                                                            //| ,2), (4,1), (4,3), (5,2), (6,1), (6,5))
+
+    <b>For Loop expression</b>
+
+    case class Person(nom :String,age:Int)
+
+    pour avoir les personnes qui ont plus que 20 ans
+
+    for (p <- persons if p.age>20 )yield(p.nom)
+    equivalant à
+
+    persons filter(p=>p.age>20)map(p=>p.nom)
+
+    l'expression for est similaire à Loop dans les langages iterative sauf qu'elle construit une list de resultats de tout les Iterators
+    for expression dans scala produit toujours un nouveau résultat
+    les deux expression sont equivalantes mais la premiere elle est plus facile a lire
 
       </pre>
 
 
 
-
+    <h4>About case class</h4>
+    <p>Case classes can be pattern matched
+        Case classes automatically define hashcode and equals
+        Case classes automatically define getter methods for the constructor arguments.
+    </p>
 
 
 
