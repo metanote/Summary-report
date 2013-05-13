@@ -28,7 +28,7 @@
         <lu id="nav">
             <li>Programming with Scala </li>
             <li>Indroduction à scala</li>
-            <li>Apprentissage des concepts scala COURSERA</li>
+            <li>Apprentissage des concepts COURSERA</li>
             <li><a href="#"> Parite 1 : Généralités</a></li>
             <li><a href="#"> Parite 2 : Présentation des concepts</a></li>
             <li><a href="#">Contact</a></li>
@@ -41,17 +41,17 @@
 
         <img src="img/Martin.jpg" alt ="odersky" >`
     <pre>
-Nom                     : Scala vient de "Scalable langage"
-Auteur                  : Martin Odersky
-Date de Création        : 2003
-Lieu                    : EPFL <a href="http://www.epfl.ch/">Ecole polytechnique fédérale de lausanne</a>
-But                     : être élégant, concis, et d’être type-safe...
-Dans la communauté PSUG : Paris scala user groupe
+<strong>Nom                     :</strong> Scala vient de "Scalable langage"
+<strong>Auteur                  :</strong> Martin Odersky
+<strong>Date de Création        :</strong> 2003
+<strong>Lieu                    :</strong> EPFL <a href="http://www.epfl.ch/">Ecole polytechnique fédérale de lausanne</a>
+<strong>But                     :</strong> être élégant, concis, et d’être type-safe...
+<strong>Dans la communauté PSUG :</strong> <a href="https://groups.google.com/forum/?hl=fr&fromgroups#!forum/paris-scala-user-group"> Paris scala user groupe </a> <img src="img/psug_logo.png" height="20px" width="10px">
     </pre>
         </div>
         <div class="separator"></div>
         <div id="intro">
-            <b>Principes de la programmation fonctionnelle en scala</b>
+            <strong>Principes de la programmation fonctionnelle en scala</strong> <br>  <br>
             <p>Sur le site des cours en ligne coursera vous trouvez une très bonne introduction sur la programmation fonctionnelle Scala assurer par
                 Martin Odersky, qui n'est moins que l'inventeur du langage Scala.
                 Le site avec un nombres aussi important d'inscrits, a rencontré un bon succés, révélateur de l'émulation de ce langage.
@@ -63,7 +63,7 @@ Dans la communauté PSUG : Paris scala user groupe
                 Vous trouvez sur le site les detailles du cours ainsi que les exercices et des aides guide pour chaque exercice dans l'Assignments.
 
             </p>
-            <b>Mes Remarques, mes attentions dans ces cours et ce que j'ai retenu</b>
+            <strong>Mes Remarques, mes attentions dans ces cours et ce que j'ai retenu</strong><br> <br>
             <lu>
             <li><b>Week 1 : Fonctions et Evaluation :</b> Dans cette semaine on a vu la possibilité de choisir entre le call by name pour evoluer la fonction  en premier
                 lieu ensuite les arguments si besion et call by value evoluer les arguments avant d'appeler la fonction.
@@ -78,7 +78,7 @@ Dans la communauté PSUG : Paris scala user groupe
                 La variance etant donnée que A :< B  si C[A] :< C[B] C est Covariant un objet immutable peut être covariant.
                 Le pattern matching notion très importante en Scala
             </li>
-            <li><b>Week 5 : Les Lists : La concatenation xs ++ ys est équivalante à (xs foldRight ys)(_::_) </b></li>
+            <li><b>Week 5 : Les Lists :</b> La concatenation xs ++ ys est équivalante à (xs foldRight ys)(_::_) </li>
             <li><b>Week 6 : Les Collections : </b>flatten est équivalante à foldRight(_++_)
             xs flatMap fct est équivalant à (xs map fct).flatten
                 l'API est très riche on peut calculer le produit scalaire en une seul ligne for((x,y)<- xs zip ys )yield (x*y)).sum
@@ -174,14 +174,17 @@ Dans la communauté PSUG : Paris scala user groupe
         </div>
         </div>
         <div id="next">
+        <br>  <br> <br> <br> <br><br>
+        <div id="SJ">
+        <img src="img/scala-vs-java.png"></div> <br>C'est vrai quand on s'habitut avec la programmation Scala en trouve que notre code java est très long, c'est magique ce langage de programmation haut niveau  ;)  <br><br><br> <br> <br> <br><br> <br> <br>
         <h2>Programmation fonctionnelle</h2>
 
         <lu>
-            <lo>Exprimer les fonctions au sens mathématique</lo>
-            <lo>Eliminer les effets de bords</lo>
-            <lo>S'oppose a la programmation impérative</lo>
+            <li>Exprimer les fonctions au sens mathématique</li>
+            <li>Eliminer les effets de bords</li>
+            <li>S'oppose a la programmation impérative</li>
         </lu>
-        <h2>Hight order function </h2>
+        <h2>Higher order functions </h2>
         <b>C'est des fonctions qui prennent en paramêtre d'autres fonction ou dans le resultat est une fonction </b>
         <pre>Exemple : une fonction apply qui prend une fonction f et une valeur v et applique la fonction f à v
         def apply(f: Int => String, v: Int) = f(v)
@@ -477,7 +480,7 @@ sont equivalantes mais la premiere elle est plus facile a lire.
         S &lsaquo;: T: S est un soustype de T
         S &rsaquo;: T : S est un super type de T
 
-        <h2>Les détailles</h2>
+        <h2>Des détailles</h2>
         <p><pre>
 case class & pattern matching :
 
@@ -543,11 +546,20 @@ iteration 3
 
         <h3>Index</h3>
         <a href="http://fr.slideshare.net/al3x/the-how-and-why-of-scala-at-twitter"> The Why and How Scala at Twitter</a>
+       <h2>Introduction Play2</h2>
+        <p>Play c'est un FrameWork high-productivity Scala Java web application qui intègre les composantes et l'API dont vous avez besion
+        pour le développement moderne de l'application web.<br>
+            Play est basé sur un architecture légère, Web convivial et dispose consommation de ressources prévisibles et minimes (CPU, mémoire, threads)
+        pour les applications hautement évolutives grâce à son modèle réactif, basé sur Iteratee IO.    <br>
+        Il suffit de suivre les démarches pour telecharger et changer le path pour tavailler avec <a href="http://www.playframework.com/" >PlayFramework</a> <br>
+        Pour faire une premier application Scala/Java avec play vous trouvez sur le site les démarches necessaire ainsi que tout les détailles
 
+        </p>
         </div>
 
         <div id ="contact">
             <h2>Contactez moi !</h2>
+            <h3>Des interrogations, un projet... ? <br>N'hésitez pas je suis socialble ^_^</h3>  <br><br>
             <form id="form" method="post">
                 <table>
                    <tr>  <td>
@@ -556,17 +568,17 @@ iteration 3
                 <label name="mail">E-mail </label> </td><td>  <input type="email" name="mail" > </td>
                 </tr>            <tr><td colspan="2"><br></td></tr>
                     <tr>              <td>
-                <label name="sujet">Sujet </label></td><td>   <textarea></textarea></td>
+                <label name="sujet">Message </label></td><td>   <textarea></textarea></td>
                     </tr>
                     <tr><td colspan="2"><br></td></tr>
                     <tr>
                         <td >
                     <input type="submit" name="envoyer" value="Envoyer">
                         </td>
-                        <td> <a href="" ></a><img src="img/linkedin-icon.png" height="30px" width="30px">
-                            <img src="img/tweeter-icon.png" height="30px" width="30px">
-                            <img src="img/viadeo.png" height="30px" width="30px">
-                            <img src="img/Facebook-logo.png" height="30px" width="30px">
+                        <td> &nbsp;&nbsp;&nbsp;&nbsp;<a href="" ></a><img src="img/linkedin-icon.png" height="30px" width="30px">
+                            &nbsp;<img src="img/tweeter-icon.png" height="30px" width="30px">
+                            &nbsp;<img src="img/viadeo.png" height="30px" width="30px">
+                            &nbsp;<img src="img/Facebook-logo.png" height="30px" width="30px">
                         </td>
                     </tr>
                 </table>
@@ -592,5 +604,6 @@ iteration 3
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+
     </body>
 </html>
