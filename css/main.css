@@ -21,6 +21,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+
     }
 
 /*
@@ -32,22 +33,43 @@ html,body #left{
     height: 100%;
 }
 
+body{
+
+    background : url("img/gris%20foncé.jpg") repeat;
+}
+#imagcentrer{
+    margin-left: 260px;
+}
+img.hier{
+
+    border:solid 5px;
+    width: 400px;
+    height: 500px;
+}
+#head{
+    height: 15%;
+    width: 100%;
+    background: #999999;
+}
 h2{
     font-family: 'LeagueGothicRegular';
     font-size: 32px;
     font-weight: normal;
     line-height: 42px;
-    color: #62bcda;
+    color: #222222;
 
 }
 #left {
     width: 25%;
     position: fixed;
+
 }
 #left.bkg{
     float: right;
     padding: 30px 30px 20px 20px;
- }
+
+
+}
 
 .separator{
     border-bottom: 2px dashed darkgray;
@@ -59,8 +81,7 @@ h2{
 #right {
     width: 75%;
     float: right;
-    background: #FFFFFF ;
-
+   /* background: url("img/gris%20mon%20foncé.png") repeat;*/
 }
 pre {
     white-space: pre;
@@ -68,7 +89,9 @@ pre {
     word-wrap: break-word;
 }
 
-
+#page {
+padding : 50px;
+}
 ul#nav li a{
     font-family: "geneva",serif;
     font-size: 36px;
@@ -130,7 +153,7 @@ ul#nav li a.active{
     text-shadow: none;
 }
 #next{
-    width: 80%;
+    width: 85%;
     margin-top: 30px;
     padding: 20px;
 }
@@ -187,17 +210,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
 
 
 
