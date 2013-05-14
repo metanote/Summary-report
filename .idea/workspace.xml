@@ -4,8 +4,8 @@
     <list default="true" id="4216c72e-7b1b-426a-a6a6-040b3c779125" name="Default" comment="" />
     <ignored path="ProjectReport.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1368457707678" ignored="false" />
-    <file path="/main.css" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1368455443783" ignored="false" />
+    <file path="/index.html" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1368472866730" ignored="false" />
+    <file path="/main.css" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1368470159432" ignored="false" />
     <file path="/dummy.xml" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1368354673370" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +70,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="582" column="44" selection-start="26737" selection-end="26737" vertical-scroll-proportion="0.44444445">
+            <state line="555" column="44" selection-start="25348" selection-end="25348" vertical-scroll-proportion="0.68567026">
               <folding />
             </state>
           </provider>
@@ -88,7 +88,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="0" selection-start="1246" selection-end="1246" vertical-scroll-proportion="-16.153847">
+            <state line="75" column="14" selection-start="1300" selection-end="1300" vertical-scroll-proportion="-11.5">
               <folding />
             </state>
           </provider>
@@ -519,14 +519,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="1246" selection-end="1246" vertical-scroll-proportion="-16.153847">
+        <state line="75" column="14" selection-start="1300" selection-end="1300" vertical-scroll-proportion="-11.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="582" column="44" selection-start="26737" selection-end="26737" vertical-scroll-proportion="0.44444445">
+        <state line="555" column="44" selection-start="25348" selection-end="25348" vertical-scroll-proportion="0.68567026">
           <folding />
         </state>
       </provider>

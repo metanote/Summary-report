@@ -70,7 +70,18 @@ h2{
 
 
 }
+#fb{
+  display: block;
+    width: 30px;
+    height: 30px;
+    background: url("img/Facebook-logo.png") no-repeat;
+    text-indent: -9999px;
 
+}
+
+#contact{
+    padding: 15px 30px 40px 50px;
+}
 .separator{
     border-bottom: 5px dashed darkgray;
     height: 5px;
@@ -180,7 +191,7 @@ img {
     vertical-align: middle;
 }
 h2{
-color:blue;
+color:#4169E1;
 }
 /*
  * Remove default fieldset styles.
