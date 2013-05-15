@@ -24,10 +24,11 @@
         <!-- Add your site or application content here -->
         <div id="page">
       <div id="left" class="bkg">
+          <img src="img/logo_UJM_NEW_JAUNE-petit.png" width="100px" height="70px">
+          <img src="img/StampleLogo.png" width="70px" height="70px">
           <h2>Sommaire</h2>
         <ol id="nav">
-            <li>Programming with Scala </li>
-            <li>Indroduction à scala</li>
+            <li>Un langage Scalable</li>
             <li>Apprentissage des concepts COURSERA</li>
             <li><a href="#"> Parite 1 : Généralités</a></li>
             <li><a href="#"> Parite 2 : Présentation des concepts</a></li>
@@ -51,8 +52,23 @@
         </div>
         <div class="separator"></div>
         <div id="intro">
+            <h2>Un langage Scalable/Adaptable </h2>
+            <p>Le nom<strong> Scala</strong> vient du besoin d'un langage Scalable multi-paradigme, son design lui permet de grandir avec la demande des
+            utilisateurs. <br>
+            Scala nous permet avec un petit script de construire des grandes systems.
+            C'est facile de travailler avec scala car il tourne sur la machine virtuelle java et il interagit parfaitement avec toues les bibliothèques de java.
+            Techniquement, Scala est un mélange de concepts de programmation orientée objet et fonctionnelle dans un langage typé statiquement.
+            La fusion de la programmation orientée objet et fonctionnelle se manifeste dans de nombreux aspects de la Scala, il est probablement
+            plus répandue que dans toute autre langue largement utilisée. Les deux styles de programmation ont des forces complémentaires quand
+            il s'agit de l'évolutivité. Constructions de programmation fonctionnels de Scala, il est facile de construire des choses intéressantes
+            rapidement à partir de pièces simples. Ses constructions orientées objet, il est facile de structurer les grands systèmes
+            et à les adapter aux nouvelles exigences. La combinaison des deux styles de Scala permet d'exprimer de nouveaux types
+            de modèles de programmation et d'abstractions qui la composent. Elle conduit également à un lisibles et style de programmation concise.
+            Et parce qu'il est tellement malléable, la programmation en Scala peut être beaucoup de plaisir.
+        </p>
+            <h2>Apprentissage des concepts COURSEA</h2>
             <strong>Principes de la programmation fonctionnelle en scala</strong> <br>  <br>
-            <p itemscope>Sur le site des cours en ligne coursera vous trouvez une très bonne introduction sur la programmation fonctionnelle Scala assurer par
+            <p itemscope>Sur le site des cours en ligne <a href="https://www.coursera.org/">coursera</a>  vous trouvez une très bonne introduction sur la programmation fonctionnelle Scala assurer par
                 Martin Odersky, qui n'est moins que l'inventeur du langage Scala.
                 Le site avec un nombres aussi important d'inscrits, a rencontré un bon succés, révélateur de l'émulation de ce langage.
                 <br>J'ai suivi ce cours de 7 semaines dont je suis très satisfait deux parties un cours théorique en video et des exercices partant toujours sur le contenu
@@ -73,7 +89,7 @@
                 des fonctions, la notion fondamentale de la récursivité terminale dont scala se base et l'astuce de l'accumulateur.
             </li>
             <li><b>Week 3 : Données et abstraction :</b> La hiérarchie des objets est : Any, AnyRef et AnyVal en Scala tout est un object(pas de type primitif comme Java int,char...)</li>
-            <li><b>Week 4 : Type & Pattern matching :</b> Les fonctions sont des objets avec une methode apply
+            <li><b>Week 4 : Type & Pattern matching :</b> Encodage Huffman binary tree: Les fonctions sont des objets avec une methode apply
                 les deux formes de plymorphismes subType&generics les types paramétres s'écrivents Class[T] au lieu de Class &ltT&gt en Java
                 La variance etant donnée que A :< B  si C[A] :< C[B] C est Covariant un objet immutable peut être covariant.
                 Le pattern matching notion très importante en Scala
@@ -176,8 +192,8 @@
 
        </div>
         <div id=initClass>
-        <b>Exemple d'instantiation d'une classe (Person)</b>
-        case class Person(CIN:Int,name:String)
+        <b>Exemple d'instantiation d'une classe (Person)</b> <br>
+        case class Person(CIN:Int,name:String) <br>
         <b>Trois écritures équivalantes</b>
         <li>val p1=new Person(123,"toto")</li>
         <li>val p2=Person(124,"zaza")</li>
@@ -479,15 +495,18 @@ sont equivalantes mais la premiere elle est plus facile a lire.
         -Subtyping
         -generics
        <h3>Type Bound</h3>
-        upper bound [S &lt;: IntSet]  veut dire que S peut être instantiated seulement du types qui conforme avec IntSet
-        S &lt;: T: S est un soustype de T
-        S &gt;: T : S est un super type de T
+        upper bound [S &lt;: IntSet]  veut dire que S peut être instantiated seulement du types qui conforme avec IntSet  <br>
+        S &lt;: T: S est un soustype de T                                                                                     <br>
+        S &gt;: T : S est un super type de T                                                                                      <br> <br>
+        <h2>Monad</h2>
+        <p><strong>Dans la programmation fonctionnelle</strong> Il y'a un concept général appelé <strong>monad</strong>, ce qui peut expliquer un grand nombre de types avec Computa-tions,
+            allant de collections, à des calculs avec l'Etat et I / O, les calculs de retour de suivi, et les opérations, pour n'en nommer que quelques-uns.
+            Vous pouvez formuler des fonctions, flatMap et withFilter sur une monade.<br> En outre, vous pouvez caractériser chaque
+            monad par map, flatMap et withFilter plus un constructeur de type "unit" qui produit une monade d'une valeur d'élément.
 
+        </p>
         <h2>Des détailles</h2>
         <p><pre>
-case class & pattern matching :
-
-scala est un langage de programmation plus OO que JAVA
 the striMargin avec un pipe au début de la phrase on peut faire des /n similaire au prog
 java
 SBT new-host:objsets Moncef$ mkdir  ~/.sbt/plugins
@@ -520,7 +539,6 @@ constant pattern c matches values equals to c dans le sens de == equals
 immutable collection utiliser dans les programmes purement fonctionnels
 
 
-exercices de 4 week de Odersky encodage Huffman binary tree
 
 Scala ne vous permet pas de programmer imperativement mais quand vous serez plus confortable avec Scala vous aimerez la façon fonctionnelle
 de programmation ce style de programmation est plus efficace
@@ -588,7 +606,7 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
         <a href="http://blog.developpez.com/djo-mos/p6161/java/scala/introduction_a_scala_methodes_et_fonctio">Developpez introduction en Scala méthodes et fonctions </a><br>
         <a href="http://www.devoxx.com/display/Devoxx2K10/Hands-On+Scala">hands on Scala</a> <br>
         <a href="http://www.playframework.com/documentation/2.1.1/Home">PlayFramework</a><br>
-        <a href=""></a>
+        <a href="http://git-scm.com/book/fr/Git-distribu%C3%A9-Contribution-%C3%A0-un-projet">Git article</a>
         <a href="https://deikonad.wordpress.com/tag/monad/">Article Monad </a>
         <a href="https://www.coursera.org/">Coursera : Functional programming principles in scala</a>
 
@@ -601,6 +619,22 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
         Il suffit de suivre les démarches pour telecharger et changer le path pour tavailler avec <a href="http://www.playframework.com/" >PlayFramework</a> <br>
         Pour faire une premier application Scala/Java avec play vous trouvez sur le site les démarches necessaire ainsi que tout les détailles
 
+        </p>
+        <h2>StartUp</h2>
+        <p> <strong>Étymologie</strong><br>
+            Le mot startup (ou start-up) est un mot anglophone d'origine américaine, diminutif de startup company.
+            Il est composé de start (commencer en français) et up, notion de hauteur, d'élévation.
+            Il s'agit donc littéralement d'une « société qui démarre ». L'expression française pour l'expression anglaise est « jeune pousse »
+            <br>
+            <strong>Définition</strong><br>
+            La startup est une jeune entreprise à fort potentiel de croissance et qui fait la plupart du temps l'objet de levée
+            de fonds. On parle également de startup pour des entreprises en construction qui ne se sont pas encore lancées sur
+            le marché commercial (ou seulement à titre expérimental). Elle est en phase plus ou moins longue de développement d'un produit,
+            de test d'une idée, de validation d'une technologie ou d'un modèle économique...
+            le risque d'échec est décuplé par rapport à des entreprises traditionnelles.<br>
+            Lorsqu'on parle d'une Startup on pense toujours à des investisseurs, des risques et des nouvelles idées...<br>
+            Le plus grand nombre des Startups dans le monde de l'informatique se trouve au Silicone Valley (États-Unis) dont on utilise maintenant les
+            géants google, facebook, twitter, Yahoo...
         </p>
         </div>
         <br>
@@ -637,20 +671,19 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
         </div>
         <div style="float:right;width:50%">
             <h2>A propos de moi !</h2>
-            <p>Je suis un étudiant en master web intelligence à l'université de Jean Monnêt saint-etienne
-            je viens d'apprendre scala dans le cadre de mon premier année master.
-                Je trouve que ce langage de programmation est un langage avancé le future langage et puis il est beaucoup plus scalable et on peut dans 3 ligne de codes
-            faire ce qui demande 10 lignes de code Java.
-                Notre projet chez stimple est de faire un reseau sociale distribuer qui répond au besoin de tout type d'utilisateurs qui n'ont pas consiance du danger
-            de centralisation des données et qui peuvent être fatale dans quelques années et qui est toujours.
-                Notre solution sera developper avec Play2 comme FrameWork et encore Scala comme langage de programmation, nous somme une startup et nous profitant des
+            <p>Je suis un étudiant en master web intelligence à <a href="http://portail.univ-st-etienne.fr/"> l'université de Jean Monnêt saint-etienne</a> <br>
+            Je viens d'apprendre scala dans le cadre de mon stage premier année master au sein du Startup <a href="https://stample.co/login"> Stample</a>.
+              <br>  Je trouve que ce langage de programmation avancé (Scala) est le future langage dont je recommande tout développeur interesser sur mon site.<br> En effet il est beaucoup plus scalable, on peut dans 3 ligne de codes
+            faire ce qui demande 10 lignes de code Java. <br>
+                Notre projet chez stimple est de faire un réseau sociale distribuer qui répond au besoin de tout type d'utilisateurs qui n'ont pas consiance du danger
+            de centralisation des données qui peuvent être fatale. <br>
+                Notre solution est developper avec Play2 comme FrameWork et encore Scala comme langage de programmation, nous somme une startup et nous profitant des
             nouvelles technologies pour avoir une solution fiable.
             </p>
         </div>
         </div>
-
-
        </div>
+
 
 
 
@@ -666,6 +699,7 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+
 
     </body>
 </html>

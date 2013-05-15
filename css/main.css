@@ -17,10 +17,15 @@ select,
 textarea {
     color: #222;
 }
+p{
+text-align:justify;
+text-justify:inter-word;
 
+}
 body {
     font-size: 1em;
     line-height: 1.4;
+
 
     }
 
@@ -33,10 +38,6 @@ html,body #left{
     height: 100%;
 }
 
-body{
-
-    background : url("img/gris%20foncé.jpg") repeat;
-}
 #imagcentrer{
     margin-left: 260px;
 }
