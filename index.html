@@ -24,14 +24,15 @@
         <!-- Add your site or application content here -->
         <div id="page">
       <div id="left" class="bkg">
-        <lu id="nav">
+          <h2>Sommaire</h2>
+        <ol id="nav">
             <li>Programming with Scala </li>
             <li>Indroduction à scala</li>
             <li>Apprentissage des concepts COURSERA</li>
             <li><a href="#"> Parite 1 : Généralités</a></li>
             <li><a href="#"> Parite 2 : Présentation des concepts</a></li>
             <li><a href="#">Contact</a></li>
-        </lu>
+        </ol>
       </div>
 
         <div id="right">
@@ -51,7 +52,7 @@
         <div class="separator"></div>
         <div id="intro">
             <strong>Principes de la programmation fonctionnelle en scala</strong> <br>  <br>
-            <p>Sur le site des cours en ligne coursera vous trouvez une très bonne introduction sur la programmation fonctionnelle Scala assurer par
+            <p itemscope>Sur le site des cours en ligne coursera vous trouvez une très bonne introduction sur la programmation fonctionnelle Scala assurer par
                 Martin Odersky, qui n'est moins que l'inventeur du langage Scala.
                 Le site avec un nombres aussi important d'inscrits, a rencontré un bon succés, révélateur de l'émulation de ce langage.
                 <br>J'ai suivi ce cours de 7 semaines dont je suis très satisfait deux parties un cours théorique en video et des exercices partant toujours sur le contenu
@@ -66,19 +67,19 @@
             <lu>
             <li><b>Week 1 : Fonctions et Evaluation :</b> Dans cette semaine on a vu la possibilité de choisir entre le call by name pour evoluer la fonction  en premier
                 lieu ensuite les arguments si besion et call by value evoluer les arguments avant d'appeler la fonction.
-                Hint : en java il y a que le call by value
+                <br>Hint : en java il y a que le call by value
             </li>
             <li><b>Week 2 : Les fonctions d'ordre supérieur :</b> Des fonctions qui prennent en paramêtre d'autres fonctions et qui retourne aussi
                 des fonctions, la notion fondamentale de la récursivité terminale dont scala se base et l'astuce de l'accumulateur.
             </li>
-            <li><b>Week 3 : Données et abstraction :</b>La hiérarchie des objets est : Any, AnyRef et AnyVal en Scala tout est un object(pas de type primitif comme Java int,char...)</li>
-            <li><b>Week 4 : Type & Pattern matching :</b>Les fonctions sont des objets avec une methode apply
+            <li><b>Week 3 : Données et abstraction :</b> La hiérarchie des objets est : Any, AnyRef et AnyVal en Scala tout est un object(pas de type primitif comme Java int,char...)</li>
+            <li><b>Week 4 : Type & Pattern matching :</b> Les fonctions sont des objets avec une methode apply
                 les deux formes de plymorphismes subType&generics les types paramétres s'écrivents Class[T] au lieu de Class &ltT&gt en Java
                 La variance etant donnée que A :< B  si C[A] :< C[B] C est Covariant un objet immutable peut être covariant.
                 Le pattern matching notion très importante en Scala
             </li>
             <li><b>Week 5 : Les Lists :</b> La concatenation xs ++ ys est équivalante à (xs foldRight ys)(_::_) </li>
-            <li><b>Week 6 : Les Collections : </b>flatten est équivalante à foldRight(_++_)
+            <li><b>Week 6 : Les Collections : </b> flatten est équivalante à foldRight(_++_)
             xs flatMap fct est équivalant à (xs map fct).flatten
                 l'API est très riche on peut calculer le produit scalaire en une seul ligne for((x,y)<- xs zip ys )yield (x*y)).sum
                 le for est un sucre syntaxique (syntactic sugar) pour les methodes Map flatMap et filter
@@ -91,10 +92,27 @@
 
             </lu>
             <p>Ce cours ma permet clairement d'apprendre les notions de base de ce langage ma permis de programmer fonctionellement et scalablement
-            je recommande ce cours comme premier pas en scala ainsi que vers la fin de ce cours si vous avez bien fait les exercices durant les sept semaines
-                vous aurez un certificat note /80 :). Il reste cependant pleins de sujet à creuser :Les monads, akka, playframework...
+            , je recommande ce cours comme premier pas en scala ainsi que vers la fin de ce cours si vous avez bien fait les exercices durant les sept semaines
+                vous aurez un certificat note X/80 :). Il reste cependant pleins de sujet à creuser :Les monads, akka, les Futures...
             </p>
+            <h3>A propos de coursera</h3>
 
+            <p>une fois qu'on à toutes les outils sont bien installer sur notre machine pour programmer en scala est ça c'est bien expliquer sur le site
+                on va recevoir chaque semaine des cours et des exercices, apres la resolution des exercices il est indisponsable de lancer les tests pour voir
+                si notre solution répond bien au besion puis nous pouvons faire un submit pour avoir la note sur 10 de l'exercice comme ci-dessous
+            </p>
+<pre>
+> submit monmail@Email.domaine monPWDdeSoumission
+[info] Packaging /Users/Moncef/Programming/Odersky/forcomp/target/scala-2.10/progfun-forcomp_2.10-1.0.0.jar ...
+[info] Done packaging.
+[info] Connecting to coursera. Obtaining challenge...
+[info] Computing challenge response...
+[info] Submitting solution...
+[success] Your code was successfully submitted: Your submission has been accepted and will be graded shortly.
+[success] Total time: 6 s, completed 1 mai 2013 12:08:53
+
+
+</pre>
             <h2>Scala en quelques mots :</h2>
         <lu>
             <li>Langage mélangeant la programmation Orienté Objet et Fonctionnelle</li>
@@ -141,19 +159,19 @@
            <div class="bloc">
                <img src="img/logo-java.png" width="50px" height="60px"> <b>En JAVA</b>
 
-        <pre>
-        class Person{
-        private int CIN ;
-        private String name;
-        public Person(int CIN,String name){
-        this.CIN=CIN  ;
-        this.name=name ;
-            }
-         }
+         <br>   <br>
+        class Person{<br>
+        private int CIN ;<br>
+        private String name; <br>
+        public Person(int CIN,String name){<br>
+        this.CIN=CIN  ;                        <br>
+        this.name=name ;                           <br>
+            }                                          <br>
+         }                                                 <br> <br><br>
 
-        Person p=new Person(1223,"TOTO")
+        Person p=new Person(1223,"TOTO")                       <br>
         // class person avec un constructeur
-        </pre>
+
            </div>
 
        </div>
@@ -186,30 +204,30 @@
         <h2>Higher order functions </h2>
         <b>C'est des fonctions qui prennent en paramêtre d'autres fonction ou dans le resultat est une fonction </b>
         <pre>Exemple : une fonction apply qui prend une fonction f et une valeur v et applique la fonction f à v
-        def apply(f: Int => String, v: Int) = f(v)
-        object Test {
-           def main(args: Array[String]) {
+def apply(f: Int => String, v: Int) = f(v)
+object Test {
+   def main(args: Array[String]) {
 
-              println ("Apply method : " + apply("Zara", "gmail.com"));
-              println ("Unappy method : " + unapply("Zara@gmail.com"));
-              println ("Unappy method : " + unapply("Zara Ali"));
+      println ("Apply method : " + apply("Zara", "gmail.com"));
+      println ("Unappy method : " + unapply("Zara@gmail.com"));
+      println ("Unappy method : " + unapply("Zara Ali"));
 
-           }
-           // The injection method (optional)
-           def apply(user: String, domain: String) = {
-              user +"@"+ domain
-           }
+   }
+   // The injection method (optional)
+   def apply(user: String, domain: String) = {
+      user +"@"+ domain
+   }
 
-           // The extraction method (mandatory)
-           def unapply(str: String): Option[(String, String)] = {
-              val parts = str split "@"
-              if (parts.length == 2){
-                 Some(parts(0), parts(1))
-              }else{
-                 None
-              }
-           }
-        }
+   // The extraction method (mandatory)
+   def unapply(str: String): Option[(String, String)] = {
+      val parts = str split "@"
+      if (parts.length == 2){
+         Some(parts(0), parts(1))
+      }else{
+         None
+      }
+   }
+}
         </pre>
         <h2>Scala au milieu professionnel </h2>
         <p>Il y a plusieurs compagnie qui ont fait une migration sur Scala parmis ces compagnies :
@@ -228,23 +246,27 @@
           <img src="img/scala%20hierarchie.jpg" name="scalaH" alt="hiérarchie des classes scala" class="hier" >
         </div>
           <pre><b>Les classes definition</b></pre>
-          <lo>définition standard</lo>
-          <lo>pas de mot clé Public</lo>
-          <lo>un fichier source contient plusieurs classes et par défaut elles sont toutes public</lo>
+          <li>Définition standard</li>
+          <li>pas de mot clé Public</li>
+          <li>un fichier source contient plusieurs classes et par défaut elles sont toutes public</li>
           <pre><b>Les cases classes Definition</b></pre>
-          <lo>les objets sont non modifiable apres l'instanciation</lo>
-          <lo>les methode hashcode,equals,toString... implicitées</lo>
-          <lo>pas de new</lo>
-          <lo>décomposer avec le Pattern Matching</lo>
-        <p>Un glissement progressive vers des cases classes</p>
+          <li>les objets sont non modifiable apres l'instanciation</li>
+          <li>les methode hashcode,equals,toString... implicitées</li>
+          <li>pas de new</li>
+          <li>décomposer avec le Pattern Matching</li>
+       <div style="width:100%">
+        <div style="Float:left;width:50%"><p><u>Un glissement progressive vers des cases classes</u></p>
         <li>Expression des termes</li>
         <li>Décoposition des structures</li>
         <li>Pretection du design</li>
-        <p>Une Classe à part entière</p>
+           </div>
+            <div style="Float:right;width:50%">
+           <p><u>Une Classe à part entière</u></p>
         <li>Export les paramêtres du constructeur</li>
         <li>Manipuler par le pattern matching</li>
         <li>Consultation simplifiée sans new explicite</li>
-
+       </div>
+        </div>
      <h2>Val/Var</h2>
 
           * val :
@@ -263,26 +285,6 @@
     <strong>Le path en scala peut être définie de la manière suivante</strong>
         <p>val directoryPath =List("dossier","fichier")</p>
         <p>val path = directoryPath.mkString("/")</p>
-
-
-    <h3>A propos de coursera</h3>
-
-    <p>une fois qu'on à toutes le outils bien installer sur notre machine pour programmer en scala est ça c'est bien expliquer sur le site
-    on va recevoir chaque semaine des cours et des exercices, apres la resolution des exercices il est indisponsable de lancer les tests pour voir
-    si notre solution répond bien au besion puis nous pouvons faire un submit pour avoir la note sur 10 de l'exercice comme ci-dessous
-    </p>
-    <pre>
-    > submit monmail@Email.domaine monPWDdeSoumission
-    [info] Packaging /Users/Moncef/Programming/Odersky/forcomp/target/scala-2.10/progfun-forcomp_2.10-1.0.0.jar ...
-    [info] Done packaging.
-    [info] Connecting to coursera. Obtaining challenge...
-    [info] Computing challenge response...
-    [info] Submitting solution...
-    [success] Your code was successfully submitted: Your submission has been accepted and will be graded shortly.
-    [success] Total time: 6 s, completed 1 mai 2013 12:08:53
-
-
-    </pre>
 
         <h2>Les Traits </h2>
      <p>c'est comme les interfaces en Java sauf qu'on peut implimenter les methodes ; déclaration similaire a une classe avec la possibilité de l'héritage multiple et pas de parametre de classe si non une erreur de compilation</p>
@@ -347,22 +349,25 @@
 
       <h3>Livres de Scala</h3>
 
+        <div style="float:left;width=70%">
         <li>Programming in Scala </li>
         <li>Scala for the impatient</li>
         <li>scala in depth</li>
         <li>Programming Scala </li>
-        <div id="rightImg">
-        <img src="img/PinSCover500x500.gif" width="80px" height="80px">
-        <img src="img/cover.png" width="80px" height="80px">
-        <img src="img/11353552.jpg" width="80px" height="80px">
-        <img src="img/51hfd66G1pL._SL500_AA300_.jpg" width="80px" height="80px">
         </div>
 
+        <div style="float:right ;width:50%">
+        <img src="img/PinSCover500x500.gif" width="80px" height="80px">
+        <img src="img/cover.png" width="65px" height="80px">
+        <img src="img/11353552.jpg" width="60px" height="80px">
+        <img src="img/51hfd66G1pL._SL500_AA300_.jpg" width="70px" height="80px">
+        </div>
 
-      <h4>Syntaxe réduit et efficase</h4>
-      <p>Vous trouvez ci-dessous un exemple de fonction produit scalaire ecrite en Scala</p>
+<br><br><br><br><br><br>
 
-      <pre>
+<h4>Syntaxe réduit et efficase</h4>
+<p itemscope>Vous trouvez ci-dessous un exemple de fonction produit scalaire ecrite en Scala</p>
+ <pre>
 def produitScalaire(xs:Vector[Double],ys:Vector[Double]):Double={
  (xs zip ys).map(xy=>xy._1*xy._2).sum
 }
@@ -390,7 +395,7 @@ def produitScalaire2(xs:Vector[Double],ys:Vector[Double]):Double={
 
 
 
-  <b>Generer des pairs</b>
+  <b>Exemple Generer des pairs</b> <br>
 Avec map vecteur de vecteurs
 val n=7
 //> n  : Int = 7
@@ -452,8 +457,8 @@ sont equivalantes mais la premiere elle est plus facile a lire.
 
 
     <h4>About case class</h4>
-    <p>Case classes can be pattern matched
-        Case classes automatically define hashcode and equals
+    <p>Case classes can be pattern matched,  <br>
+        Case classes automatically define hashcode and equals, <br>
         Case classes automatically define getter methods for the constructor arguments.
     </p>
 
@@ -474,9 +479,9 @@ sont equivalantes mais la premiere elle est plus facile a lire.
         -Subtyping
         -generics
        <h3>Type Bound</h3>
-        upper bound [S &lsaquo;: IntSet]  veut dire que S peut être instantiated seulement du types qui conforme avec IntSet
-        S &lsaquo;: T: S est un soustype de T
-        S &rsaquo;: T : S est un super type de T
+        upper bound [S &lt;: IntSet]  veut dire que S peut être instantiated seulement du types qui conforme avec IntSet
+        S &lt;: T: S est un soustype de T
+        S &gt;: T : S est un super type de T
 
         <h2>Des détailles</h2>
         <p><pre>
@@ -540,8 +545,40 @@ iteration 2
 iteration 3
 </pre>
           </p>
+           <h2>GitHub</h2>
+        <b>Pourquoi Git ?</b>
+        <p>
+
+            Si vous avez déjà travaillé sur un projet informatique, que ce soit un petit projet personnel ou un plus gros projet professionnel, vous avez certainement déjà rencontré un de ces problèmes :
+
+           <li> « Qui a modifié le fichier X, il marchait bien avant et maintenant il provoque des bugs ! » ;  </li>
+
+           <li> « Robert, tu peux m’aider en travaillant sur le fichier X pendant que je travaille sur le fichier Y ? Attention à ne pas toucher au fichier Y car si on travaille dessus en même temps je risque d’écraser tes modifications ! » ; </li>
+
+            <li>« Qui a ajouté cette ligne de code dans ce fichier ? Elle ne sert à rien ! » ; </li>
+
+           <li> « À quoi servent ces nouveaux fichiers et qui les a ajoutés au code du projet ? » ;      </li>
+
+          <li>  « Quelles modifications avions-nous faites pour résoudre le bug de la page qui se ferme toute seule ? »   </li>
+
+            Si ces problèmes-là vous parlent, vous auriez dû utiliser un logiciel de gestion de versions. Ce type de logiciel est devenu indispensable lorsqu’on travaille à plusieurs sur un même projet et donc sur le même code source.
+        Même si vous travaillez seuls, vous aurez intérêt à commencer à en utiliser un rapidement car il vous offrira de nombreux avantages, comme la conservation d’un historique de chaque modification des fichiers par exemple.
+        <br><strong>Vous voyez il y'a plusieurs raisons pour lesquelles j'ai décidé d'écrire mon rapport de stage en html5 ;)</strong>
+        </p>
 
 
+
+
+
+
+        <p><a href="https://github.com/">GitHub</a>  c'est un site qui vous permet d'héberger vos projets avec git et qui vous permet de gérer d'une manier visuelle les collaborateurs et les modifications
+        le principale interret de ce site qu'il est gratuit pour les projets open source et même pour les projet privé il est relativement intéressant au niveau tarif c'est aussi bas.
+        </p>
+<pre>
+Hint :Il existe de nombreux logiciels de gestion de versions, comme SVN (Subversion), Mercurial et Git. Je vous présente Git (prononcez « guite ») qui est un des plus puissants logiciels de ce genre.
+Nous l’utilisons notamment pour gérer le code source du Stample !
+
+</pre>
         <h3>Index</h3>
         <a href="http://fr.slideshare.net/al3x/the-how-and-why-of-scala-at-twitter"> The Why and How Scala at Twitter</a> <br>
         <a href="http://www.scala-lang.org/api">Scala API </a>                                                                <br>
@@ -552,7 +589,7 @@ iteration 3
         <a href="http://www.devoxx.com/display/Devoxx2K10/Hands-On+Scala">hands on Scala</a> <br>
         <a href="http://www.playframework.com/documentation/2.1.1/Home">PlayFramework</a><br>
         <a href=""></a>
-        <a href=""></a>
+        <a href="https://deikonad.wordpress.com/tag/monad/">Article Monad </a>
         <a href="https://www.coursera.org/">Coursera : Functional programming principles in scala</a>
 
 
@@ -566,8 +603,9 @@ iteration 3
 
         </p>
         </div>
+        <br>
         <h2>Contactez moi !</h2>
-        <div id ="contact">
+        <div style="float:left; width:50%">
 
             <h3>Des interrogations, un projet... ? <br>N'hésitez pas, je suis socialble ^_^</h3>  <br><br>
             <form id="form" method="post">
@@ -597,7 +635,18 @@ iteration 3
                 </table>
             </form>
         </div>
-
+        <div style="float:right;width:50%">
+            <h2>A propos de moi !</h2>
+            <p>Je suis un étudiant en master web intelligence à l'université de Jean Monnêt saint-etienne
+            je viens d'apprendre scala dans le cadre de mon premier année master.
+                Je trouve que ce langage de programmation est un langage avancé le future langage et puis il est beaucoup plus scalable et on peut dans 3 ligne de codes
+            faire ce qui demande 10 lignes de code Java.
+                Notre projet chez stimple est de faire un reseau sociale distribuer qui répond au besoin de tout type d'utilisateurs qui n'ont pas consiance du danger
+            de centralisation des données et qui peuvent être fatale dans quelques années et qui est toujours.
+                Notre solution sera developper avec Play2 comme FrameWork et encore Scala comme langage de programmation, nous somme une startup et nous profitant des
+            nouvelles technologies pour avoir une solution fiable.
+            </p>
+        </div>
         </div>
 
 
