@@ -41,7 +41,12 @@ html,body #left{
 margin-left:40px;
 
 }
-
+ul.soust1{
+margin-left:10px;
+}
+ul.soust2{
+margin-left:15px;
+}
 #index{
 
    padding:  100px 100px 100px 25px;
@@ -75,7 +80,7 @@ h2{
 }
 #left.bkg{
     float: right;
-    padding: 30px 30px 20px 20px;
+    padding: 5px 30px 20px 20px;
 
 
 }
@@ -199,8 +204,14 @@ color: red;
 img {
     vertical-align: middle;
 }
+h4{
+ color:#7EB6FF;
+}
 h2{
 color:#4169E1;
+}
+h3{
+color:#60AFFE;
 }
 /*
  * Remove default fieldset styles.
