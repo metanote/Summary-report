@@ -37,7 +37,15 @@ body {
 html,body #left{
     height: 100%;
 }
+.alignement{
+margin-left:40px;
 
+}
+
+#index{
+
+   padding:  100px 100px 100px 25px;
+}
 #imagcentrer{
     margin-left: 260px;
 }

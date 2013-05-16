@@ -22,20 +22,28 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+
         <div id="page">
+        <nav>
       <div id="left" class="bkg">
           <img src="img/logo_UJM_NEW_JAUNE-petit.png" width="100px" height="70px">
           <img src="img/StampleLogo.png" width="70px" height="70px">
           <h2>Sommaire</h2>
         <ol id="nav">
-            <li>Un langage Scalable</li>
-            <li>Apprentissage des concepts COURSERA</li>
+            <li><a href="#scala">Un langage Scalable</a></li>
+            <li><a href="#coursera">Apprentissage des concepts COURSERA</a></li>
+            <ul>
+                <li>Principes de la PF Scala</li>
+                <li><a href="#attentions">Mes attentions dans ces cours</a></li>
+                <li><a href="#propCoursera">A propos de coursera</a></li>
+            </ul>
             <li><a href="#"> Parite 1 : Généralités</a></li>
             <li><a href="#"> Parite 2 : Présentation des concepts</a></li>
             <li><a href="#">Contact</a></li>
         </ol>
-      </div>
 
+      </div>
+      </nav>
         <div id="right">
         <div id="home" class="page"><h2> Println("Hello Scala")</h2>
         <h3>About Scala</h3>
@@ -52,7 +60,9 @@
         </div>
         <div class="separator"></div>
         <div id="intro">
+            <div id="scala">
             <h2>Un langage Scalable/Adaptable </h2>
+                <div class="alignement">
             <p>Le nom<strong> Scala</strong> vient du besoin d'un langage Scalable multi-paradigme, son design lui permet de grandir avec la demande des
             utilisateurs. <br>
             Scala nous permet avec un petit script de construire des grandes systems.
@@ -66,9 +76,14 @@
             de modèles de programmation et d'abstractions qui la composent. Elle conduit également à un lisibles et style de programmation concise.
             Et parce qu'il est tellement malléable, la programmation en Scala peut être beaucoup de plaisir.
         </p>
+                </div>
+            </div>
+            <div id="coursera">
             <h2>Apprentissage des concepts COURSEA</h2>
+
             <strong>Principes de la programmation fonctionnelle en scala</strong> <br>  <br>
-            <p itemscope>Sur le site des cours en ligne <a href="https://www.coursera.org/">coursera</a>  vous trouvez une très bonne introduction sur la programmation fonctionnelle Scala assurer par
+                <div class="alignement">
+                <p itemscope>Sur le site des cours en ligne <a href="https://www.coursera.org/">coursera</a>  vous trouvez une très bonne introduction sur la programmation fonctionnelle Scala assurer par
                 Martin Odersky, qui n'est moins que l'inventeur du langage Scala.
                 Le site avec un nombres aussi important d'inscrits, a rencontré un bon succés, révélateur de l'émulation de ce langage.
                 <br>J'ai suivi ce cours de 7 semaines dont je suis très satisfait deux parties un cours théorique en video et des exercices partant toujours sur le contenu
@@ -79,7 +94,10 @@
                 Vous trouvez sur le site les detailles du cours ainsi que les exercices et des aides guide pour chaque exercice dans l'Assignments.
 
             </p>
+            </div>
+                <div id="attentions">
             <strong>Mes Remarques, mes attentions dans ces cours et ce que j'ai retenu</strong><br> <br>
+                    <div class="alignement">
             <lu>
             <li><b>Week 1 : Fonctions et Evaluation :</b> Dans cette semaine on a vu la possibilité de choisir entre le call by name pour evoluer la fonction  en premier
                 lieu ensuite les arguments si besion et call by value evoluer les arguments avant d'appeler la fonction.
@@ -107,10 +125,13 @@
             <li><b>Week 7 : Lazy evaluation l'evolution paresseuse :</b> streams, lazy val...</li>
 
             </lu>
+                        </div>
             <p>Ce cours ma permet clairement d'apprendre les notions de base de ce langage ma permis de programmer fonctionellement et scalablement
             , je recommande ce cours comme premier pas en scala ainsi que vers la fin de ce cours si vous avez bien fait les exercices durant les sept semaines
                 vous aurez un certificat note X/80 :). Il reste cependant pleins de sujet à creuser :Les monads, akka, les Futures...
             </p>
+                </div>
+                <div id="propCoursera">
             <h3>A propos de coursera</h3>
 
             <p>une fois qu'on à toutes les outils sont bien installer sur notre machine pour programmer en scala est ça c'est bien expliquer sur le site
@@ -129,7 +150,11 @@
 
 
 </pre>
-            <h2>Scala en quelques mots :</h2>
+                </div>
+            </div>
+            <div id="generalites">
+            <h2>Généralités</h2>
+                <div class="alignement">
         <lu>
             <li>Langage mélangeant la programmation Orienté Objet et Fonctionnelle</li>
             <li>Tourne sur la JVM</li>
@@ -140,7 +165,13 @@
             <li>Tout est Objet (hiérarchie des classes)</li>
 
         </lu>
-       <h4>La méthode Map</h4>
+                </div>
+            </div>
+            <div id="concept">
+            <h2>Présentations des concepts</h2>
+                <div class="alignement">
+                <h4>La méthode Map</h4>
+
             <p>permet d'appliquer une fonction sur tout les éléments d'une liste</p>
             <h4>Exemple</h4>
             scala> val list=List(4,5,6)
@@ -163,7 +194,7 @@
             <br>
             scala> res1.flatten
             res6: List[Int] = List(1, 1, 2, 1, 2, 3)
-
+              </div>
             <div id="blocs">
         <div class="bloc">
         <img src="img/scala-logo.png" width="60px" height="30px"> <b>En SCALA</b>
@@ -246,18 +277,23 @@ object Test {
 }
         </pre>
         <h2>Scala au milieu professionnel </h2>
+        <div class="alignement">
         <p>Il y a plusieurs compagnie qui ont fait une migration sur Scala parmis ces compagnies :
         <ul><img src="img/linkedin-icon.png" height="20px" width="20px">Linkedin</ul>
         <ul><img src="img/tweeter-icon.png" height="20px" width="20px"> Twitter</ul>
         <ul><img src="img/viadeo.png" height="20px" width="20px">viadeo ...</ul>
         </p>
+            </div>
         <h2>Les outils pour programmer en scala</h2>
+        <div class="alignement">
           <li>The Interactive Interpreter : Read-Evaluate-Print Loop (REPL) </li>
           <li>Simple Build Tool (sbt)</li>
           <li>IDE : Eclipse/IntelliJ avec plugin Scala</li>
           <li>Scala doc</li>
-          <h2>Presentation des concepts clés</h2>
+          </div>
+            <h2>Presentation des concepts clés</h2>
           <b>Scala hiérachie</b>   <br>
+
         <div id="imagcentrer">
           <img src="img/scala%20hierarchie.jpg" name="scalaH" alt="hiérarchie des classes scala" class="hier" >
         </div>
@@ -362,7 +398,7 @@ object Test {
 
           }
       </pre>
-
+        </div><!-- div conceptes-->
       <h3>Livres de Scala</h3>
 
         <div style="float:left;width=70%">
@@ -597,18 +633,7 @@ Hint :Il existe de nombreux logiciels de gestion de versions, comme SVN (Subvers
 Nous l’utilisons notamment pour gérer le code source du Stample !
 
 </pre>
-        <h3>Index</h3>
-        <a href="http://fr.slideshare.net/al3x/the-how-and-why-of-scala-at-twitter"> The Why and How Scala at Twitter</a> <br>
-        <a href="http://www.scala-lang.org/api">Scala API </a>                                                                <br>
-        <a href="http://joelabrahamsson.com/learning-scala-part-eight-scalas-type-hierarchy-and-object-equality/">Scala hiérarchie</a><br>
-        <a href="http://anders.janmyr.com/2009/10/lists-in-scala.html">Les listes en Scala</a>                                            <br>
-        <a href="http://booksites.artima.com/programming_in_scala_2ed/examples/html/ch20.html">L'abstraction en Scala</a>                     <br>
-        <a href="http://blog.developpez.com/djo-mos/p6161/java/scala/introduction_a_scala_methodes_et_fonctio">Developpez introduction en Scala méthodes et fonctions </a><br>
-        <a href="http://www.devoxx.com/display/Devoxx2K10/Hands-On+Scala">hands on Scala</a> <br>
-        <a href="http://www.playframework.com/documentation/2.1.1/Home">PlayFramework</a><br>
-        <a href="http://git-scm.com/book/fr/Git-distribu%C3%A9-Contribution-%C3%A0-un-projet">Git article</a>
-        <a href="https://deikonad.wordpress.com/tag/monad/">Article Monad </a>
-        <a href="https://www.coursera.org/">Coursera : Functional programming principles in scala</a>
+
 
 
         <h2>Introduction Play2</h2>
@@ -633,11 +658,29 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
             de test d'une idée, de validation d'une technologie ou d'un modèle économique...
             le risque d'échec est décuplé par rapport à des entreprises traditionnelles.<br>
             Lorsqu'on parle d'une Startup on pense toujours à des investisseurs, des risques et des nouvelles idées...<br>
-            Le plus grand nombre des Startups dans le monde de l'informatique se trouve au Silicone Valley (États-Unis) dont on utilise maintenant les
+            On trouve le plus grand nombre des Startups dans le monde de l'informatique au Silicone Valley (États-Unis) dont on utilise maintenant les
             géants google, facebook, twitter, Yahoo...
         </p>
         </div>
-        <br>
+        <footer>
+            <div id="index">
+
+                <h2>Index</h2>
+                <a href="http://fr.slideshare.net/al3x/the-how-and-why-of-scala-at-twitter"> The Why and How Scala at Twitter</a> <br>
+                <a href="http://www.scala-lang.org/api">Scala API </a>                                                                <br>
+                <a href="http://joelabrahamsson.com/learning-scala-part-eight-scalas-type-hierarchy-and-object-equality/">Scala hiérarchie</a><br>
+                <a href="http://anders.janmyr.com/2009/10/lists-in-scala.html">Les listes en Scala</a>                                            <br>
+                <a href="http://booksites.artima.com/programming_in_scala_2ed/examples/html/ch20.html">L'abstraction en Scala</a>                     <br>
+                <a href="http://blog.developpez.com/djo-mos/p6161/java/scala/introduction_a_scala_methodes_et_fonctio">Developpez introduction en Scala méthodes et fonctions </a><br>
+                <a href="http://www.devoxx.com/display/Devoxx2K10/Hands-On+Scala">hands on Scala</a> <br>
+                <a href="http://www.playframework.com/documentation/2.1.1/Home">PlayFramework</a><br>
+                <a href="http://git-scm.com/book/fr/Git-distribu%C3%A9-Contribution-%C3%A0-un-projet">Git article</a>
+                <a href="https://deikonad.wordpress.com/tag/monad/">Article Monad </a>
+                <a href="https://www.coursera.org/">Coursera : Functional programming principles in scala</a>
+            </div>
+        </footer>
+        <div class="separator"></div>
+        <br> <br><br>
         <h2>Contactez moi !</h2>
         <div style="float:left; width:50%">
 
@@ -662,8 +705,8 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
                             <a href="http://www.linkedin.com/profile/view?id=177613941&trk=hb_tab_pro_top" ><img src="img/linkedin-icon.png" height="30px" width="30px">                  </a>
                             &nbsp;<a href="https://twitter.com/metanote123" ><img src="img/tweeter-icon.png" height="30px" width="30px">         </a>
                             &nbsp;<a href="" ><img src="img/viadeo.png" height="30px" width="30px">           </a>
-                            &nbsp;<a href="" ><img src="img/icon-gmail.png" height="30px" width="30px">   </a>
-                            &nbsp;<a href="http://www.facebook.com/moncef.benrejeb" ><img src="img/Facebook-logo.png" height="30px" width="30px"></a>
+                            &nbsp;<a href="" ><img src="img/google-Plus-icon.png" height="25px" width="30px">   </a>
+                            &nbsp;<a href="http://www.facebook.com/moncef.benrejeb" ><img src="img/Facebook-logo.png" height="30px" width="40px"></a>
                         </td>
                     </tr>
                 </table>
@@ -671,7 +714,7 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
         </div>
         <div style="float:right;width:50%">
             <h2>A propos de moi !</h2>
-            <p>Je suis un étudiant en master web intelligence à <a href="http://portail.univ-st-etienne.fr/"> l'université de Jean Monnêt saint-etienne</a> <br>
+            <p>Je suis un étudiant en master web intelligence à <a href="http://portail.univ-st-etienne.fr/"> l'université de Jean Monnêt saint-etienne</a>. <br>
             Je viens d'apprendre scala dans le cadre de mon stage premier année master au sein du Startup <a href="https://stample.co/login"> Stample</a>.
               <br>  Je trouve que ce langage de programmation avancé (Scala) est le future langage dont je recommande tout développeur interesser sur mon site.<br> En effet il est beaucoup plus scalable, on peut dans 3 ligne de codes
             faire ce qui demande 10 lignes de code Java. <br>
@@ -681,7 +724,10 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
             nouvelles technologies pour avoir une solution fiable.
             </p>
         </div>
+
+
         </div>
+
        </div>
 
 
