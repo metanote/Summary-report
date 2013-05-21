@@ -15,10 +15,10 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -87,8 +87,49 @@
 </div>
 
 <div id="right">
-<div id="home" class="page"><h2> Hands On Scala 'Summary Report'</h2>
+<div id="home" class="page">
+    <h4>Année Univesitaire 2012/2013</h4>
+    <div id="titreRapport">
+        <h2>Rapport de Stage</h2>
+        <hr>
+        <h3 style="color:black">Implémentation de la Linked Data platform (RDF, WebID) dans le backend Scala de l'application web Stample</h3>
+        <hr>
+        <h4>Formation</h4>
+        <h3 style="color:black">Master Web Intelligence</h3>
+        <h4>Université</h4>
+        <h3 style="color:black">Université de Jean Monnet Saint-Etienne</h3>
+        <h4>Par</h4>
+        <h3 style="color:black">Moncef BEN RAJEB</h3>
+        <hr>
+        <h4>Ecadrants de Stage</h4>
+        <h3 style="color:black">Tuteur de stage : Henry STORY</h3>
+        <h3 style="color:black">Tuteur pédagogique : Professeur Pierre MARET</h3>
+    </div>
+          <hr>
+    <h2>Introduction</h2>
+    <p>Au cours de mon premier année master Web Intelligence à l'université de Jean Monnêt Saint Etienne, noux devrions effectuer un stage
+    d'une durée minimale trois mois à compter à partir de 18 mars.
+    </p>
+    <p>Je me suis orienté à travailler avec une Startup Stample d'écrire une version décentraliser de stample avec les nouvelles téchnologie du web
+    sémantique et le langage de programmation fonctionnelle orienté object Scala afin de mettre en oeuvre une solution mondiale au probléme de centralisation
+    stample est révolutionnaire.
+    </p>
+    <p>Ce stage à été une bonne opportunité pour moi d'apprendre Scala, PlayFrameWork et de voir en proche la vie d'une Startup qui est notament differente d'une
+    entreprise ainsi que d'apprendre la philosophie du web et de travailler avec un groupe très ambitieux.
+    </p>
+    <p>J'ai décidé d'écrire mon rapport en HTML5 et de le mettre en ligne comme projet public afin d'interagir avec ce rapport comme étant un projet
+    open source que je vais le mettre en ligne.
+        Ce qui permet à mes professeurs, mes collegues et mes amis de naviguer facilement pour voir le contenu du rapport et profiter de mes indexs disponible en ligne
+    de plus me contacter pour des interrogations et ils peuvent accàder au source disponible sur mon compte GuitHub pour modifier ou me proposer des suggestions.
+        Je recommande cette methode à tout informaticiens qui veux montrer ces talents en programmmant aussi le rapport son Stage.
 
+    </p>
+    <p>Comme Romain Blin à déjà expliquer dans sa thése de premier année master l'année dérnier en proposant ça propre solution LifeShare dans le cadre
+    d'un stage de recherche au laboratoire Télécom Claude Chappe. nous travaillons avec Henry Story de mettre en place un Stample décentraliser.
+        Il apparait normale de commencer mon rapport de stage de présenter Stample et décrire la solution centraliser de stample et de décortiquer les différentes fonctionnalitès puis
+    d'analyser les problémes.
+    </p>
+    <h2> Hands On Scala 'Summary Report'</h2>
     <h3>About Scala</h3>
 
     <img src="img/Martin.jpg" alt="odersky">
@@ -104,6 +145,9 @@
 <div class="separator"></div>
 <div id="intro">
 <div id="scala">
+
+
+
     <h2>Un langage Scalable/Adaptable </h2>
 
     <div class="alignement">
@@ -182,7 +226,8 @@
                     l'accumulateur.
                 </li>
                 <li><b>Week 3 : Données et abstraction :</b> La hiérarchie des objets est : Any, AnyRef et AnyVal en
-                    Scala tout est un object(pas de type primitif comme Java int,char...)
+                    Scala tout est un object(pas de type primitif comme Java int,char...) <br>
+                    Exercice disponible sur mon compte GitHub <a href="https://github.com/metanote/objsets">week3</a>
                 </li>
                 <li><b>Week 4 : Type & Pattern matching :</b> Encodage Huffman binary tree: Les fonctions sont des
                     objets avec une methode apply
@@ -190,7 +235,9 @@
                     de Class &ltT&gt en Java
                     La variance etant donnée que A :< B si C[A] :< C[B] C est Covariant un objet immutable peut être
                     covariant.
-                    Le pattern matching notion très importante en Scala
+                    Le pattern matching notion très importante en Scala <br>
+                    Disponible sur mon GitHub <a href="https://github.com/metanote/patmat">week4</a>
+
                 </li>
                 <li><b>Week 5 : Les Lists :</b> La concatenation xs ++ ys est équivalante à (xs foldRight ys)(_::_)</li>
                 <li><b>Week 6 : Les Collections : </b> flatten est équivalante à foldRight(_++_)
@@ -200,10 +247,11 @@
                     le for est un sucre syntaxique (syntactic sugar) pour les methodes Map flatMap et filter
                     for(x<- e1) yield e2 <=> e1.map(x=>e2)
                     for(x<- e1 if fct) yield e2 <=> for(x<- e1.filter(x=>fct))yield e2
-                    for(x<-e1;y<-e2) yield e3 <=> e1.flatMap(x=>for(y<-e2))yield e3
+                    for(x<-e1;y<-e2) yield e3 <=> e1.flatMap(x=>for(y<-e2))yield e3   <br>
+                Disponible sur mon compte GitHub <a href="https://github.com/metanote/forcomp">week6</a>
 
 
-                <li><b>Week 7 : Lazy evaluation l'evolution paresseuse :</b> streams, lazy val...</li>
+                <li><b>Week 7 : Lazy evaluation l'evolution paresseuse :</b> streams, lazy val... <br>Disponible sur <a href="https://github.com/metanote/streams">week7</a> </li>
 
             </lu>
         </div>
@@ -726,7 +774,11 @@ iteration 3
 </div>
 
 <br><br><br><br><br><br>
-
+<h2>Outils de développements</h2>
+<p><img src="img/IntelliJIDEA.png" width="40px" height="40px">IntelliJ IDEA est un IDE Java commercial développé par JetBrains. Il est fréquemment appelé par le simple nom d’« IntelliJ ».</p>
+<p>IntelliJ est un bon IDE dont j'ai travaillé pour faire le site du rapport en HTML5</p>
+<p><img src="img/eclipse.png" width="40px" height="40px">Eclipse est un projet, décliné et organisé en un ensemble de sous-projets de développements logiciels, de la Fondation Eclipse visant à développer un environnement de production de logiciels libres qui soit extensible, universel et polyvalent.</p>
+<p>J'ai utilisé Eclipse avec le plagin de scala pour faire les exercices de Odersky ainsi que pour travailler sur le projet Stample</p>
 <h2>GitHub</h2>
 <b>Pourquoi Git ?</b>
 
@@ -768,7 +820,7 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
 </pre>
 
 
-<h2>Introduction Play2</h2>
+<h2>Introduction PlayFramework</h2>
 
 <p>Play c'est un FrameWork high-productivity Scala Java web application qui intègre les composantes et l'API dont vous
     avez besion
@@ -779,8 +831,19 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
     Il suffit de suivre les démarches pour telecharger et changer le path pour tavailler avec <a
             href="http://www.playframework.com/">PlayFramework</a> <br>
     Pour faire une premier application Scala/Java avec play vous trouvez sur le site les démarches necessaire ainsi que
-    tout les détailles
-
+    tout les détailles.
+<br>
+    <p><b>Hint : </b>On peut parler dans cette partie d'une petite application de débutant même principe que Twitter en Scala/PlayFramework disponible sur mon
+compte GitHub sur <a href="https://github.com/metanote/TweetProject">Ici</a>
+</p>
+</p>
+<h2>MongoDB</h2>
+<p>Pour notre première version de Stample centraliser on utilise MongoDB pour la gestion de notre base de donnée orienté document, scalable. Il y'a une présentation de MongoDB sur slideshare que vous trouvez ci-dessous.
+    <iframe src="http://fr.slideshare.net/slideshow/embed_code/13327505" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px;margin-left:250px;margin-top:20px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
+<div style="margin-bottom:5px;margin-left:30px"> <strong> <a href="http://fr.slideshare.net/cf357/toutes-les-raisons-dadopter-mongodb" title="Toutes les raisons d&#39;adopter MongoDB" target="_blank">Toutes les raisons d&#39;adopter MongoDB</a> </strong> from <strong><a href="http://fr.slideshare.net/cf357" target="_blank">Adrien</a></strong> </div>
+démarche pour installation de MongoDB
+on peut utiliser la ligne de commande shell ==> téléchargement de mongo pour mac puis la configuration en utilisant shell
+cd bin puis sudo data/db et sudo chmod 777 pour les droits d'accées
 </p>
 
 <h2>StartUp</h2>
@@ -824,6 +887,7 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
         <a href="http://git-scm.com/book/fr/Git-distribu%C3%A9-Contribution-%C3%A0-un-projet">Git article</a>
         <a href="https://deikonad.wordpress.com/tag/monad/">Article Monad </a>
         <a href="https://www.coursera.org/">Coursera : Functional programming principles in scala</a>
+        <a href="https://github.com/metanote/Summary-report">Le rapport sur git projet open source</a>
     </div>
 </footer>
 <div class="separator"></div>
@@ -840,15 +904,15 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
             <table>
                 <tr>
                     <td>
-                        <label name="nom">Nom </label></td>
-                    <td><input type="text" name="nom" size="31"></td>
+                        <label name="contactname">Nom</label></td>
+                    <td><input type="text" name="contactname" size="31"></td>
                 </tr>
                 <tr>
                     <td colspan="2"><br></td>
                 </tr>
                 <tr>
                     <td>
-                        <label name="mail">E-mail </label></td>
+                        <label name="mail">E-mail    <strong style="color:red">*</strong></label></td>
                     <td><input type="email" name="mail" size="31"></td>
                 </tr>
                 <tr>
@@ -856,23 +920,23 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
                 </tr>
                 <tr>
                     <td>
-                        <label name="sujet">Sujet </label></td>
-                    <td><input type="text" name="sujet" size="31"></td>
+                        <label name="sujet">Sujet    <strong style="color:red">*</strong></label></td>
+                    <td><input type="text" name="subject" size="31"></td>
                 </tr>
                 <tr>
                     <td colspan="2"><br></td>
                 </tr>
                 <tr>
                     <td>
-                        <label name="sujet">Message </label></td>
-                    <td><textarea cols="30" rows="10"></textarea></td>
+                        <label name="msg">Message <strong style="color:red">*</strong></label></td>
+                    <td><textarea name="message" cols="30" rows="10"></textarea></td>
                 </tr>
                 <tr>
                     <td colspan="2"><br></td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" name="envoyer" value="Envoyer">
+                        <input type="submit" name="submit" value="Envoyer">
                     </td>
                     <td> &nbsp;&nbsp;&nbsp;&nbsp;
                         &nbsp;<a href="https://stample.co/"><img src="img/StampleLogo.png" height="30px" width="30px">
@@ -888,6 +952,8 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
                     </td>
                 </tr>
             </table>
+            <br><br>
+            Tous les champs en <span style="color:red">*</span> sont obligatoires
         </form>
     </div>
     <div style="float:right;width:50%">
@@ -901,10 +967,10 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
             développeur interesser sur mon site.<br> En effet il est beaucoup plus scalable, on peut dans 3 ligne de
             codes
             faire ce qui demande 10 lignes de code Java. <br>
-            Notre projet chez stimple est de faire un réseau sociale distribuer qui répond au besoin de tout type
+            Notre projet stample est de faire un réseau sociale distribuer qui répond au besoin de tout type
             d'utilisateurs qui n'ont pas consiance du danger
-            de centralisation des données qui peuvent être fatale. <br>
-            Notre solution est developper avec Play2 comme FrameWork et encore Scala comme langage de programmation,
+            de centralisation des données qui peuvent être fatale add arguments++ <br>
+            Notre solution est developpé sur PlayFrameWork, Scala comme langage de programmation, MongoDB version centraliser puis RDF version distribier
             nous somme une startup et nous profitant des
             nouvelles technologies pour avoir une solution fiable.
         </p>
@@ -914,6 +980,8 @@ Nous l’utilisons notamment pour gérer le code source du Stample !
 </div>
 
 </div>
+
+
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
