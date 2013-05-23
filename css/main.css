@@ -30,6 +30,31 @@ body {
     }
 
 /*
+page dimension
+*/
+
+#bandeau {
+	width:600px;
+	height:50px;
+	background-color:#00CCFF;
+	}
+#contenu {
+	width:600px;
+	height:400px;
+	background-color:#FFCC00;
+	}
+#piedpage {
+	width:600px;
+	height:50px;
+	background-color:#33FF99;
+	}
+
+#pageDeGarde{
+padding : 80px 80px 80px 80px;
+}
+
+
+/*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
@@ -148,12 +173,12 @@ ul#nav li a.active{
 #home h3{
     text-align: left;
 }
-#home pre{
+.page pre{
     width: 800px;
     margin-left: 50px;
    margin-top: 5px;
 }
-#home img{
+.page img{
     width: 80px;
     height: 100px;
 }

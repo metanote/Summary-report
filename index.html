@@ -37,6 +37,15 @@
 
     <h2>Sommaire</h2>
     <ol id="nav" type="I">
+        <li>Remerciement</li>
+        <li>Introduction</li>
+        <li>Présentation de Stample</li>
+        <ul><li>Bréve description</li>
+        <li>Constat de départ</li>
+            <li>Probléme</li>
+            <li>Solution</li>
+            <li>Concurrence</li>
+        </ul>
         <li><a href="#scala">Un langage Scalable</a></li>
         <ul>
             <li>Description</li>
@@ -88,8 +97,9 @@
 
 <div id="right">
 <div id="home" class="page">
+    <div id="pageDeGarde">
     <h4>Année Univesitaire 2012/2013</h4>
-    <div id="titreRapport">
+
         <h2>Rapport de Stage</h2>
         <hr>
         <h3 style="color:black">Implémentation de la Linked Data platform (RDF, WebID) dans le backend Scala de l'application web Stample</h3>
@@ -104,34 +114,97 @@
         <h4>Ecadrants de Stage</h4>
         <h3 style="color:black">Tuteur de stage : Henry STORY</h3>
         <h3 style="color:black">Tuteur pédagogique : Professeur Pierre MARET</h3>
+
+        <hr>
     </div>
-          <hr>
+
+
+</div>
+<div class="separator"></div>
+<div id="intro">
+<div id="scala">
+
+    <br><br>
+    <h2>Remerciement</h2>
+    <p>A écrire ...</p>
+    <br><br>
     <h2>Introduction</h2>
     <p>Au cours de mon premier année master Web Intelligence à l'université de Jean Monnêt Saint Etienne, noux devrions effectuer un stage
-    d'une durée minimale trois mois à compter à partir de 18 mars.
+        d'une durée minimale trois mois à compter à partir de 18 mars.
     </p>
-    <p>Je me suis orienté à travailler avec une Startup Stample d'écrire une version décentraliser de stample avec les nouvelles téchnologie du web
-    sémantique et le langage de programmation fonctionnelle orienté object Scala afin de mettre en oeuvre une solution mondiale au probléme de centralisation
-    stample est révolutionnaire.
+    <p>Je me suis orienté grace à Monsieur Pierre Marret que je le remerci à travailler avec une Startup Stample pour écrire une version décentraliser de stample avec les nouvelles téchnologie du web
+        sémantique et le langage de programmation fonctionnelle orienté object Scala afin de mettre en oeuvre une solution mondiale au probléme de centralisation,
+        Stample est révolutionnaire.
     </p>
-    <p>Ce stage à été une bonne opportunité pour moi d'apprendre Scala, PlayFrameWork et de voir en proche la vie d'une Startup qui est notament differente d'une
-    entreprise ainsi que d'apprendre la philosophie du web et de travailler avec un groupe très ambitieux.
+    <p>Ce stage à été une bonne opportunité pour moi d'apprendre Scala, PlayFrameWork et de voir en proche la vie profesionnelle avec une Startup qui est notament differente d'une
+        entreprise ainsi que d'apprendre la philosophie du web et de travailler avec un groupe très ambitieux.
     </p>
-    <p>J'ai décidé d'écrire mon rapport en HTML5 et de le mettre en ligne comme projet public afin d'interagir avec ce rapport comme étant un projet
-    open source que je vais le mettre en ligne.
+    <p>J'ai décidé d'écrire mon rapport en HTML5 et de le mettre en ligne comme projet public open source afin d'interagir avec ce rapport comme étant un projet
+        open source puis l'héberger sur un serveur pour avoir une visibilité plus grande de se que j'ai appris et aider les autres à apprendre plus vite.
         Ce qui permet à mes professeurs, mes collegues et mes amis de naviguer facilement pour voir le contenu du rapport et profiter de mes indexs disponible en ligne
-    de plus me contacter pour des interrogations et ils peuvent accàder au source disponible sur mon compte GuitHub pour modifier ou me proposer des suggestions.
-        Je recommande cette methode à tout informaticiens qui veux montrer ces talents en programmmant aussi le rapport son Stage.
+        de plus me contacter pour des interrogations et ils peuvent accàder au source disponible sur mon compte GuitHub pour modifier ou me proposer des suggestions.
+        Je recommande cette methode à tout informaticiens qui veux montrer ces talents en programmmant aussi le rapport du Stage.
 
     </p>
     <p>Comme Romain Blin à déjà expliquer dans sa thése de premier année master l'année dérnier en proposant ça propre solution LifeShare dans le cadre
-    d'un stage de recherche au laboratoire Télécom Claude Chappe. nous travaillons avec Henry Story de mettre en place un Stample décentraliser.
-        Il apparait normale de commencer mon rapport de stage de présenter Stample et décrire la solution centraliser de stample et de décortiquer les différentes fonctionnalitès puis
-    d'analyser les problémes.
+        d'un stage de recherche au laboratoire Télécom Claude Chappe. Je travaille avec Henry Story de mettre en place un Stample décentraliser.
+        Il apparait normale de commencer mon rapport de stage par la présentation du Stample ensuite de décrire la solution actuelle centraliser de Stample et de décortiquer les différentes fonctionnalitès puis
+        d'analyser les problémes, aprés je vais présenter Scala.
     </p>
-    <h2> Hands On Scala 'Summary Report'</h2>
-    <h3>About Scala</h3>
+    <h2>Présentation de Stample</h2>
+    <h3>brève description</h3>
+    <p>Stample, premiere plateforme de réseau social distribué et sécurisé, redonne à chacun le contrôle exclusif de ses informations et
+        améliore l'ergonomie de l'apprentissage, du travail individuel et de la collaboration. </p>
+    <h3>Constat de départ</h3>
+    <p>A l'ère de l'économie de la connaissance, de l'omniprésence des données, de leur circulation permanente sur l'internet, et
+        en l'absence de mécanismes efficaces de restriction de leurs usages, nos informations personnelles, nos travaux,
+        et de plus en plus de données nous concernant, sont captées, détournées et exploitées sans qu'aucun contrôle ne soit possible.
 
+        Les enjeux critiques des individus, entreprises, institutions et états:
+    <ul><li>Permettre à chaque partie prenante de reprendre le contrôle de leurs informations,</li>
+        <li>Favoriser l'union et la coordination des intelligences autour d'objectifs communs. </li>
+    </ul>
+    </p>
+    <h3>Probléme</h3>
+    <p>Il ya un besoin croissant d'un outil de partage sécurisé des connaissances numérique.
+
+        Les gens perdent des heures chaque semaine en raison de la complexité croissante de leur vie numérique:
+    <ul><li>Filtrage des e-mails et notifications non désirés, </li>
+        <li>Créations et mises à jour de leurs profils sur de trop nombreux services isolés les uns des autres ,</li>
+        <li>Récupération de mots de passe perdus ou volés ...</li>
+    </ul>
+    </p>
+    <p>Et les choses empirent:
+    <ul><li>L'information pertinente est de plus en plus difficile à extraire du déluge de données,</li>
+        <li>La grande segmentation des outils rend l'organisation et la collaboration frustrante.</li>
+        <li>Les modèles actuels de stockage centralisé de données posent de sérieux problèmes de confidentialité et de respect de la vie privée.</li>
+    </ul>
+    </p>
+    <h3>Solution</h3>
+    <p>Stample propose une solution simple pour :
+    <ul><li>Reprendre le contrôle de vos données personnelles, décider avec qui et comment elles peuvent être partagées,</li>
+        <li>Améliorer l'ergonomie de l'apprentissage et du travail par la contextualisation avancée de l'information,</li>
+        <li>Gérer son identité de façon autonome sur le Web social distribué,</li>
+        <li>Collaborer avec son réseau de confiance en toute sécurité, sans centralisation, ni accès d'une tierce partie.</li>
+    </ul>
+    </p>
+    <h3>Concurrence</h3>
+    <ul>
+        <li>Protocoles d'identification (Alternatives à WebID ): OpenID, OAUth, Infocard... </li>
+        <li>Gestion de l'accès et de l'identité: CA Technologies, Ping identity, SailPoint, Garlik (owned by Experian)...</li>
+        <li>Stockage en ligne: Dropbox, Box, Google Drive...</li>
+        <li>Réseaux sociaux: Facebook, Tumblr, Pinterest, Instagram...</li>
+        <li>Aggrégateurs et plateformes de blogs: WordPress, Twitter, Reddit, Scoop.it, Paper.li, Flipboard, Zite, Jolicloud... </li>
+        <li>Réseaux sociaux professionnels: LinkedIn, Quora, Yammer, Podio... </li>
+        <li>Outils de note et d'organisation d'informations: Evernote, SpringPad, Clipboard, Pearltrees, Kippt, Google Keep..</li>
+        <li>Outils de partage des connaissances: Mendeley, Kno, Scribd, SlideShare, Issuu... </li>
+    </ul>
+
+    <br><br><br><br>
+    <h2> Hands On Scala </h2>
+    <div class="page">
+    <h3>About Scala</h3>
+      <br><br>
     <img src="img/Martin.jpg" alt="odersky">
     <pre>
 <strong>Nom :</strong> Scala vient de "Scalable langage"
@@ -141,13 +214,7 @@
 <strong>But :</strong> être élégant, concis, et d’être type-safe...
 <strong>Dans la communauté PSUG :</strong> <a href="https://groups.google.com/forum/?hl=fr&fromgroups#!forum/paris-scala-user-group"> Paris scala user groupe </a> <img src="img/psug_logo.png" height="20px" width="10px">
     </pre>
-</div>
-<div class="separator"></div>
-<div id="intro">
-<div id="scala">
-
-
-
+    </div>
     <h2>Un langage Scalable/Adaptable </h2>
 
     <div class="alignement">
@@ -262,6 +329,7 @@
             vous aurez un certificat note X/80 :). Il reste cependant pleins de sujet à creuser :Les monads, akka, les
             Futures...
         </p>
+        <p>Il y'a aussi une serie d'exercice sur  <a href="https://github.com/metanote/handson-scala">metanote mon compte GitHub</a> proposer par paris scala user group que je vous invite à les faires.</p>
     </div>
     <div id="propCoursera">
         <div class="alignement">
@@ -811,7 +879,7 @@ nombreux avantages, comme la conservation d’un historique de chaque modificati
 <p><a href="https://github.com/">GitHub</a> c'est un site qui vous permet d'héberger vos projets avec git et qui vous
     permet de gérer d'une manier visuelle les collaborateurs et les modifications
     le principale interret de ce site qu'il est gratuit pour les projets open source et même pour les projet privé il
-    est relativement intéressant au niveau tarif c'est aussi bas.
+    est relativement intéressant au niveau tarif c'est aussi bas.  [Site de Zéro]
 </p>
 <pre>
 Hint :Il existe de nombreux logiciels de gestion de versions, comme SVN (Subversion), Mercurial et Git. Je vous présente Git (prononcez « guite ») qui est un des plus puissants logiciels de ce genre.
@@ -866,8 +934,77 @@ cd bin puis sudo data/db et sudo chmod 777 pour les droits d'accées
     utilise maintenant les
     géants google, facebook, twitter, Yahoo...
 </p>
-</div>
+<h2>OuiShare</h2>
+<p>Nous avons participer au ouiShare à paris pour présenter Stample samedi "4" et dimanche "5 mai" j'ai assité à des présentations
+de plusieurs startup, Henry à présenter webID et le format RDF nous avons fait un petit exercice Sacha à présenter Stample.
+    C'est une bonne opportunité pour rencontrer des développeurs et voir les nouvelles idées.
+</p>
+<h2>Linked Data</h2>
+<p>D'après l'article de Tim Berners Lee : "Le linked data n'est pas seulement de mettre des données sur le net, c'est aussi mettre les données de façon qu'une machine ou un être humain
+    puisse comprendre à quelle concept est lié cette donnée". <br>C'est exactement ça la force du web semantic le web intelligent.
 
+</p>
+<p>Je reprend ce que Romain à déjà expliquer dans son rapport l'année dernier, les 4 régles à respecter sont:
+<ul><li><strong>Identifier les objets avec des URI : </strong> Chaque objet fait référence à un concept doit posséder un URI public accessible à tous.</li>
+<li><strong>Utiliser des URI HTTP : </strong> Car l'utilisation d'autres URI tel que URI "file://" entrînereaient des problémes si un client autre que celui qui à déposer la ressource utlise cette URI</li>
+<li><strong>Utiliser des Ontologies bien précises pour se servir de d'information contre l'URI : </strong>Lors de la saisie d'une URI, celle-ci doit répondre en donnant toujours une information. </li>
+    <li><strong>Déposer les liens ailleurs : </strong> Développer une sorte de <b>nappe</b> de données permettant de trouver toutes sorte de choses relatives à toutes sortes de concept.</li>
+</ul>
+</p>
+<p> <strong>Hint : Ces régles premettent d'établir des liens universels entre les documents présenter sur la toile.</strong></p>
+</div>
+<h2>Les Ontologies</h2>
+ <p>Une ontologie est l'ensemble structuré des termes et concepts représentant le sens d'un champ d'informations, que ce soit par les métadonnées d'un espace de noms, ou les éléments d'un domaine de connaissances.
+     L'ontologie constitue en soi un modèle de données représentatif d'un ensemble de concepts dans un domaine, ainsi que des relations entre ces concepts.
+     Elle est employée pour raisonner à propos des objets du domaine concerné. Plus simplement, on peut aussi dire que<strong> l'« ontologie est aux données ce que la grammaire est au langage »</strong>. [wikipédia]</p>
+<h3><img src="img/foaf-explorer.240.png" width="50px" height="50px">FOAF "Friend of a Friend"/"Ami d'un ami"</h3>
+<p>Ce vocabulaire RDF permet de permettant de décrire des personnes et les relations qu'elles entetiennent entre elles, c'est un vocabulaire trés connu dans le monde
+du web sémantique permettant de  décrire le concept de personne de manière ouverte.   <br>
+    Exemple de déscription d'une personne vocabulaire FOAF [Livre the social semantic web]:
+<pre>
+&lthttps://www.johonbreslin.com/foaf/foaf.rdf#me> <b> //la personne est identifier par un URI      </b>
+a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes suivante : </b>
+    foaf:name "John Berslin";  <b>//nom complet du person   </b>
+    foaf:mbox &ltmailto:johnbreslin@deri.org>;      <b>  //son adress mail   </b>
+    foaf:homepage &lthttp://www.johnberslin.com/>;   <b> //sa page d'acceuil </b>
+    foaf:nick "cloud";                <b>   //son pseudo                    </b>
+    foaf:topic_interest: &lthttp://dbpedia.org>;   <b>  //le site dont il s'interesse  </b>
+    foaf:knows[               <b>  //ces connaissances  </b>
+        a foaf :Person;
+        foaf:name "Sheil Kinsella";
+        foaf:mbox &ltmailto:sheila.kinsella@deri.org;
+    ];
+    foaf:knows[
+        a foaf :Person;
+        foaf:name "Hak-lae Kim";
+        foaf:mbox &ltmailto:haklae.kim@deri.org;
+    ].
+     </pre>
+</p>
+
+<h3><img src="img/Sioc-logo.png" width="50px" height="50px">SIOC Semantically Interlinked Online Communities</h3>
+<p> C'est un vocabulaire RDF permettant de décrire des objets couramment utilisé sur des sites communautaires et leurs relations. Il permet l'intégration d'une manière
+sémantique d'un flux social.
+         <pre></pre>
+</p>
+
+<h3>Turtle Terse RDF triple Language</h3>
+<p>Un langage qui permet de une sérialisation non-XML des modéles RDF. C'est un sous-ensemble de Notation3</p>
+<h3>OpenID WebID</h3>
+<p>Des protocoles d'authentifications WebID utilise le Linked Data pour l'authentification contrairement à OpenID, WebID manipule directement les profiles foaf et
+l'authentification par certificat SSL(secure sockets layer) un protocole de sécurisation des échanges sur internet.
+</p>
+<h3>SPARQL</h3>
+<p>C'est un langage de requêtes pour manipuler les graphes RDF, de plus il est possible d'effectuer des tâches multiple sur le même concept au
+même temps. C'est un langage relativement proche de SQL permet une gestion simple des graphes RDF.
+</p>
+<h2>Apports Personnels</h2>
+<p>Durant ces trois mois de stage qui continuera jusqu'a Septembre, j'ai appri plusieurs concept de scala et de Linked Data la philosophie du web
+sémantique et d'écrire des tests.
+    Ce stage est une opportunité unique qui va me permettre de commancer ma deuxième année de master très alaise, vu qu'il touche vraiment ma spècialité le web intelligence.
+Le travaille avec les nouvelles technologie de l'informatique PlayFramework, scala, webID va renforcé mes connaissances et améliorer mon savoir faire.
+    Un stage chez une StartUp ma apporter aussi beaucoup de choses la voulanter, la patience, et tout un vocabulaire d'investisseur, lever de fond...
+</p>
 <footer>
     <div id="index">
 
@@ -888,6 +1025,7 @@ cd bin puis sudo data/db et sudo chmod 777 pour les droits d'accées
         <a href="https://deikonad.wordpress.com/tag/monad/">Article Monad </a>
         <a href="https://www.coursera.org/">Coursera : Functional programming principles in scala</a>
         <a href="https://github.com/metanote/Summary-report">Le rapport sur git projet open source</a>
+        <a href="http://www.w3.org/standards/techs/owl#w3c_all">Ontology language OWL</a>
     </div>
 </footer>
 <div class="separator"></div>
@@ -967,7 +1105,7 @@ cd bin puis sudo data/db et sudo chmod 777 pour les droits d'accées
             développeur interesser sur mon site.<br> En effet il est beaucoup plus scalable, on peut dans 3 ligne de
             codes
             faire ce qui demande 10 lignes de code Java. <br>
-            Notre projet stample est de faire un réseau sociale distribuer qui répond au besoin de tout type
+            Notre projet Stample est de faire un réseau sociale distribuer qui répond au besoin de tout type
             d'utilisateurs qui n'ont pas consiance du danger
             de centralisation des données qui peuvent être fatale add arguments++ <br>
             Notre solution est developpé sur PlayFrameWork, Scala comme langage de programmation, MongoDB version centraliser puis RDF version distribier
