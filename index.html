@@ -199,8 +199,40 @@
         <li>Outils de note et d'organisation d'informations: Evernote, SpringPad, Clipboard, Pearltrees, Kippt, Google Keep..</li>
         <li>Outils de partage des connaissances: Mendeley, Kno, Scribd, SlideShare, Issuu... </li>
     </ul>
+    <br>
 
-    <br><br><br><br>
+
+ <h3>AVANTAGE COMPETITIF</h3>
+    <p>La concurrence sur l'Internet, et en particulier dans le domaine des réseaux sociaux est féroce, un très grand nombre d'acteurs se bat sur un périmètre de marché très resseré.
+        Comme l'a expliqué Renee Mauborgne dans «Blue Ocean Strategy», la seule façon de sortir gagnant d'un marché hautement concurrentiel comme celui-ci est de changer les règles du jeu,
+        de créer un marché qui n'existait pas auparavant.
+        Stample ouvre l'océan bleu du Web social sécurisé et distribué (réparti). Stample vise à établir sa réputation et son leadership dans ce domaine par le passage à une architecture
+        respectueuse de la vie privée et de la confidentialité, les aidant à collaborer efficacement sans duplication.</p>
+    <h3>STRATEGIE</h3>
+    <br><br>
+    <h4>Imposer notre plateforme technique open source comme la référence</h4>
+    <p>Le caractère open source du coeur applicatif de Stample est un élément central de notre stratégie.
+        Il nous permet de nous prémunir contre des attaques en droit de la propriété intellectuelle par les géants du secteur
+        et de bénéficier du soutien d'un communauté de développeur extrêmement productive.
+
+        Notre leadeship sur ce nouveau marché immense résultera de notre capacité à imposer le rythme des mises à jour de notre plateforme
+        ouverte, et à maintenir notre avance dans la maîtrise des technologies mises en oeuvre.</p>
+    <h4>Offrir une une application de qualification de l'information et l'expérience utilisateur la plus homogène </h4>
+    <p>Stample est conçu pour s'adapter aux gestes et aux usages quotidiens des gens.
+        Nos utilisateurs pourront chacun construire leur réseau de connaissances personnelles, en évaluant leurs sources et les contenus qu'ils partagent.
+        Nous allons utiliser la mécanique du jeu pour encourager les gens à partager des informations hautement qualifiées et contextualisées.</p>
+    <h3>MODELE ECONOMIQUE</h3>
+    <p>Stample est distribué sous deux formes impliquant deux modèles d'affaires distincts: </p>
+    <ul><li>Une version de base logiciel libre (open source) que chacun peut installer de façon autonome sur les serveurs de son choix.</li>
+    <li>dont la monétisation résulte de la fourniture de support, garantie et de services spécifiques.</li>
+        <li>Un Service cloud à la carte (en mode SaaS (logiciel en tant que service)).</li>
+        <li>dont la monétisation résulte d'abonnements et de commissions sur la vente d'options.</li>
+    </ul>
+    <br><br>
+
+    <img src="img/stample.png">
+
+    <br><br>
     <h2> Hands On Scala </h2>
     <div class="page">
     <h3>About Scala</h3>
@@ -843,7 +875,7 @@ iteration 3
 
 <br><br><br><br><br><br>
 <h2>Outils de développements</h2>
-<p><img src="img/IntelliJIDEA.png" width="40px" height="40px">IntelliJ IDEA est un IDE Java commercial développé par JetBrains. Il est fréquemment appelé par le simple nom d’« IntelliJ ».</p>
+<p><img src="img/IntelliJIDEA.png" width="40px" height="40px">IntelliJ IDEA est un IDE Java commercial développé par JetBrains. Il est fréquemment appelé par le simple nom «IntelliJ».</p>
 <p>IntelliJ est un bon IDE dont j'ai travaillé pour faire le site du rapport en HTML5</p>
 <p><img src="img/eclipse.png" width="40px" height="40px">Eclipse est un projet, décliné et organisé en un ensemble de sous-projets de développements logiciels, de la Fondation Eclipse visant à développer un environnement de production de logiciels libres qui soit extensible, universel et polyvalent.</p>
 <p>J'ai utilisé Eclipse avec le plagin de scala pour faire les exercices de Odersky ainsi que pour travailler sur le projet Stample</p>
@@ -912,8 +944,70 @@ compte GitHub sur <a href="https://github.com/metanote/TweetProject">Ici</a>
 démarche pour installation de MongoDB
 on peut utiliser la ligne de commande shell ==> téléchargement de mongo pour mac puis la configuration en utilisant shell
 cd bin puis sudo data/db et sudo chmod 777 pour les droits d'accées
-</p>
 
+<h3>Pourquoi Mongo?</h3>
+MongoDB est un système de stockage de données NoSQL. En effet, ce n'est pas la peine de faire du SQL pour requêter votre base de donnée MongoDB. On parle alors de base SchemaLess, car il n'est pas nécessaire de faire un script SQL plus ou moins complexe pour créer et définir la structure des données qu'on peut mettre dans notre base. C'est simple, on met juste un énorme Hash.
+
+Le fait de n'avoir des données que sous forme de Hash revient à avoir une base de données dite orienté Documents. MongoDB est donc une base de donnée SchemaLess orientée Documents.
+                                                                                         <br>
+On peux par exemple chercher tous les documents qui possèdent plusieurs éléments dans un tableau   <br>
+
+<b>db.things.find( { a: { $all: [ 2, 3 ] } } ); </b><br>
+Alors qu'en SQL on aurait plus fait un <br>
+
+<b>select * from things where a LIKE '%2%' AND a LIKE '%3%'  </b><br>
+On peux aussi faire de la recherche en donnant une fonction Javascript <br>
+
+<b>db.myCollection.find( { $where: "this.a > 3" } ); </b>  <br>
+<b>Syntaxe SQL VS MongoDB</b><a href="http://docs.mongodb.org/manual/reference/sql-comparison/"> Link ici</a>
+
+
+</p>
+<h2>Pourquoi en Utilise Scala, PlayFramework, MongoDB ?</h2>
+<p>On à choisie les meilleurs technologie pour mettre en oeuvre la version actuelle de stample simplement parce que
+comme j'ai déjà expliqué la scalabilité du langage, la performance de MangoDB et la légèreté du Play implique la force, souplesse et
+    efficacité de Stample.
+
+</p>
+<h2>Json "Javascript Object Notation"</h2>
+<p>c'est un format de données textuelles, générique, dérivé de la notation des objets du langage ECMAScript. Il permet de représenter de l’information structurée. [Wikipédia]</p>
+<br>
+<b>Format Json </b><br>
+<pre>
+    {
+    "menu": {
+        "id": "file",
+        "value": "File",
+        "popup": {
+            "menuitem": [
+                { "value": "New", "onclick": "CreateNewDoc()" },
+                { "value": "Open", "onclick": "OpenDoc()" },
+                { "value": "Close", "onclick": "CloseDoc()" }
+            ]
+        }
+    }
+}
+</pre>
+<b>En XML</b>
+<pre>
+  &ltmenu id="file" value="File">
+      &ltpopup>
+          &ltmenuitem value="New" onclick="CreateNewDoc()" />
+          &ltmenuitem value="Open" onclick="OpenDoc()" />
+          &ltmenuitem value="Close" onclick="CloseDoc()" />
+      &lt/popup>
+  &lt/menu>
+
+</pre>
+<br>
+<strong>Pour voir si le Json est valide </strong>  <a href="http://jsonformatter.curiousconcept.com/">ici</a>
+<h2>L'importance de Scala pour le passage de Stample en RDF</h2>
+<p>à developper ...</p>
+
+<h2>Stample est unique</h2>
+<p> En Ajoutant les notions de web sémantique dont je vais parler ça sera lunique platforme qui résoudre le probléme de la position des
+données disponible sur le web non stocker sur un serveur de l'entreprise quelque part dans le monde vous pouvez les avoir chez nous...à developper
+</p>
 <h2>StartUp</h2>
 
 <p><strong>Étymologie</strong><br>
@@ -968,18 +1062,19 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
     foaf:mbox &ltmailto:johnbreslin@deri.org>;      <b>  //son adress mail   </b>
     foaf:homepage &lthttp://www.johnberslin.com/>;   <b> //sa page d'acceuil </b>
     foaf:nick "cloud";                <b>   //son pseudo                    </b>
-    foaf:topic_interest: &lthttp://dbpedia.org>;   <b>  //le site dont il s'interesse  </b>
+    foaf:topic_interest &lthttp://wiki.dbpedia.org/Documentation>;<b>//le site dont il s'interesse  </b>
     foaf:knows[               <b>  //ces connaissances  </b>
         a foaf :Person;
         foaf:name "Sheil Kinsella";
-        foaf:mbox &ltmailto:sheila.kinsella@deri.org;
+        foaf:mbox &ltmailto:sheila.kinsella@deri.org>;
     ];
     foaf:knows[
         a foaf :Person;
         foaf:name "Hak-lae Kim";
-        foaf:mbox &ltmailto:haklae.kim@deri.org;
+        foaf:mbox &ltmailto:haklae.kim@deri.org>;
     ].
      </pre>
+<b>Des propriétes FOAF : </b>homepage, isPrimaryTopicOf,knows... <a href="http://xmlns.com/foaf/spec/#term_topic_interest">autres propriétes et class </a>
 </p>
 
 <h3><img src="img/Sioc-logo.png" width="50px" height="50px">SIOC Semantically Interlinked Online Communities</h3>
@@ -990,7 +1085,7 @@ sémantique d'un flux social.
 
 <h3>Turtle Terse RDF triple Language</h3>
 <p>Un langage qui permet de une sérialisation non-XML des modéles RDF. C'est un sous-ensemble de Notation3</p>
-<h3>OpenID WebID</h3>
+<h3>OpenID VS WebID</h3>
 <p>Des protocoles d'authentifications WebID utilise le Linked Data pour l'authentification contrairement à OpenID, WebID manipule directement les profiles foaf et
 l'authentification par certificat SSL(secure sockets layer) un protocole de sécurisation des échanges sur internet.
 </p>
@@ -1005,6 +1100,19 @@ sémantique et d'écrire des tests.
 Le travaille avec les nouvelles technologie de l'informatique PlayFramework, scala, webID va renforcé mes connaissances et améliorer mon savoir faire.
     Un stage chez une StartUp ma apporter aussi beaucoup de choses la voulanter, la patience, et tout un vocabulaire d'investisseur, lever de fond...
 </p>
+<h3>CWM "Closed Word Machine"</h3>
+<p>C'est un programme populaire de sémantique web écrit en Python par Tim Berners Lee et Dan Connolly qui peut faire :
+<ul>
+    <li>Parser et imprimer les formats RDF suivant : XML RDF, Notaion3, et Ntriples</li>
+    <li>Mettre les triplets dans une base de donnée interrogeable.</li>
+    <li>Effectuer des inférences comme un moteur d'inférence FOPL. </li>
+    <li>Effectuer des fonctions internes telles que la comparaison de chaînes, la récupération des ressources, tout en utilisant une suite builtins extensible</li>
+</ul>
+
+
+</p>
+<h2>Les perspectives </h2>
+<p>à developper ... le plan d'avenir ... </p>
 <footer>
     <div id="index">
 
@@ -1027,6 +1135,11 @@ Le travaille avec les nouvelles technologie de l'informatique PlayFramework, sca
         <a href="https://github.com/metanote/Summary-report">Le rapport sur git projet open source</a>
         <a href="http://www.w3.org/standards/techs/owl#w3c_all">Ontology language OWL</a>
     </div>
+
+
+    <h2>Bibliographie</h2>
+    à ajouter...
+
 </footer>
 <div class="separator"></div>
 <br> <br><br>
