@@ -543,7 +543,7 @@ aside blockquote pre,
 .typo .note pre,
 article .note pre,
 aside .note pre {
-  background: #999999 !important;
+  background: #dcdcdc !important;
   color: #000000 !important;
   border: none !important;
 }

@@ -821,7 +821,7 @@ case class Person(CIN:Int,name:String) <br>
 <ul>
     <li>Exprimer les fonctions au sens mathématique</li>
     <li>Eliminer les effets de bords</li>
-    <li>S'oppose a la programmation impérative</li>
+    <li>S'oppose à la programmation impérative</li>
 </ul>
 <h3>Higher order functions </h3>
 <b>C'est des fonctions qui prennent en paramétre d'autres fonction ou dans le resultat est une fonction </b>
@@ -852,7 +852,7 @@ None
 }
 </pre>
 
-<h3>Presentation des concepts clés</h3>
+<h3>Présentation des concepts clés</h3>
 
 <h4>Scala classes hiérarchie</h4> <br>
 <img src="img/class-hierarchy.png" name="scalaH" alt="hiérarchie des classes scala" class="hier">
@@ -1199,17 +1199,12 @@ iteration 3
 <img class="imgbook" src="img/11353552.jpg">
 <img class="imgbook" src="img/51hfd66G1pL._SL500_AA300_.jpg">
 
-<h3>AKKA</h3>
 
-<p>Les acteurs sont des entités concurrentes très légers. Ils traitent les messages de manière asynchrone à 
-    l'aide d'une boucle recevoir event-driven. Pattern matching contre les messages est une façon commode
-    d'exprimer le comportement d'un acteur. Ils élèvent le niveau d'abstraction
-    et le rendre beaucoup plus facile à  écrire, tester, comprendre et maintenir des systèmes parallèles et / ou
-    distribués.<a href="http://akka.io/">akka page</a></p>
-
+<hr>
 
 </blockquote>
 </article>
+
 <article>
 <blockquote>
 <H2><A name="outils">Outils de développements</A></H2>
@@ -1307,7 +1302,7 @@ nombreux avantages, comme la conservation d'un historique de chaque modification
     pour le développement moderne de l'application web.<br>
     Play est basé sur un architecture légère, Web convivial et dispose consommation de ressources prévisibles et minimes
     (CPU, mémoire, threads)
-    pour les applications hautement évolutives grà¢ce à  son modèle réactif, basé sur Iteratee IO. <br>
+    pour les applications hautement évolutives grâce à  son modèle réactif, basé sur Iteratee IO. <br>
     Il suffit de suivre les démarches pour télècharger et changer le path pour tavailler avec
     <a href="http://www.playframework.com/">
         PlayFramework
@@ -1320,14 +1315,14 @@ nombreux avantages, comme la conservation d'un historique de chaque modification
     consomment nativement les navigateurs (HTML, CSS, JavaScript, JSON...)
 
     Play adopte pleinement les principes de l'architecture REST : <br>
-    Il sépare la gestion de l'interface et la gestion des données grà¢ce au support de l'approche MVC
+    Il sépare la gestion de l'interface et la gestion des données grâce au support de l'approche MVC
     (Model-View-Controller) et à  la prise en charge de la compilation des assets exploités dans le navigateur pour
     exploiter celui-ci comme une plateforme de développement.
     Il ne conserve pas d'état entre les requétes (stateless) ce qui évite les mauvaises pratiques de gestion de session
     auxquelles nous faisons face depuis le début du web (remplissage de mémoire, perte de session intempestive au bout
     d'un temps sans utilisation). Une fois de plus, le navigateur est mis à  contribution en exploitant ses capacités de
     stockage locales.
-    Les ressources de l'application sont identifiées de manière unique et prédéfinies grà¢ce au système de gestion de
+    Les ressources de l'application sont identifiées de manière unique et prédéfinies grâce au système de gestion de
     routes, ce qui favorise la propension naturelle de ces requétes à  étre cachées par le navigateur et par les proxies
     pour faciliter la montée en charge.
 
@@ -1426,6 +1421,13 @@ On peux aussi faire de la recherche en donnant une fonction Javascript <br>
 </pre>
 <br>
 <strong>Pour voir si le Json est valide </strong> <a href="http://jsonformatter.curiousconcept.com/">ici</a>
+<h3>AKKA</h3>
+
+<p>Les acteurs sont des entités concurrentes très légers. Ils traitent les messages de manière asynchrone à 
+    l'aide d'une boucle recevoir event-driven. Pattern matching contre les messages est une façon commode
+    d'exprimer le comportement d'un acteur. Ils élèvent le niveau d'abstraction
+    et le rendre beaucoup plus facile à  écrire, tester, comprendre et maintenir des systèmes parallèles et / ou
+    distribués.<a href="http://akka.io/">akka page</a></p>
 
 <h3>SMTP "Simple mail transfer protocol"</h3>
 
@@ -1602,7 +1604,7 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
 
         <h3>SPARQL</h3>
 
-        <p>C'est un langage de requétes pour manipuler les graphes RDF, de plus il est possible d'effectuer des tà¢ches
+        <p>C'est un langage de requétes pour manipuler les graphes RDF, de plus il est possible d'effectuer des tâches
             multiple
             sur le méme concept au
             méme temps. C'est un langage relativement proche de SQL permet une gestion simple des graphes RDF.
@@ -1630,18 +1632,8 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
     <blockquote>
         <H2><A name="ArchiStamp">Architecture de STAMPLE</A></H2>
 
-        <h3>L'importance de Scala pour le passage de Stample en RDF</h3>
-
-        <p>à  developper ...</p>
-
-        <h3>Stample est unique ?</h3>
-
-        <p> En Ajoutant les notions de web sémantique dont je vais parler ça sera lunique platforme qui résoudre le
-            probléme de
-            la possession des
-            données disponible sur le web non stocker sur un serveur de l'entreprise quelque part dans le monde vous
-            pouvez les
-            avoir chez nous...à  developper
+        <p>L'architecture actuelle de stample est suite aux travaux de Edward et Sébastien qui ont développer le backEnd de stample
+        Sébastien (développeur Scala) et Edward, Amélie (Design, JavaScript) durant ces deux dérnières années.
         </p>
 
 
@@ -1728,6 +1720,8 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
         <h3>Structure des collections</h3>
 
         <p>Stample structure les données dans 6 collections differentes de la façon suivante</p>
+        <div style="float: left;width: 40%;">
+
         <b>categories</b>
         <ul>
             <li>_ID : objectID</li>
@@ -1742,6 +1736,8 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
             <li>updateChildBreadCrumb Boolean</li>
             <li>categoryType : normal/...</li>
         </ul>
+        </div>
+        <div style="float: right;width: 60%;">
         <b>Users</b>
         <ul>
             <li>_ID : objectID</li>
@@ -1755,6 +1751,10 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
             <li>DisplayClippingTour : Boolean</li>
             <li>UserStats: [activeRelationShips, pendingRelationShip, stamples ] : NumberLong</li>
         </ul>
+        </div>
+        <hr>
+        <div style="float: left;width: 40%;">
+
         <b>Stamples</b>
         <ul>
             <li>_ID : objectID</li>
@@ -1776,7 +1776,41 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
             <li>breadcrumb : ["_ID", "name"]</li>
 
         </ul>
+            </div>
+        <div style="float: right;width: 60%;">
 
+        <b>s3files</b>
+        <ul>
+            <li>_id : objectID</li>
+            <li>UserId : objectID</li>
+            <li>_typeHint : models.S3File</li>
+            <li>bucket : com.stample.s3</li>
+            <li>fileName : String</li>
+            <li>path : String</li>
+            <li>url : String(https://s3.amazonaws.com/com.stample.s3/...)</li>
+            <li>creationDate : NumberLong</li>
+        </ul>
+            </div>
+        <hr>
+        <div style="float: left;width: 40%;">
+            //Ajouter la structure
+            <b>category_sharings</b>
+            <ul>
+                <li>_ID : objectID</li>
+                <li>UserID : objectID</li>
+            </ul>
+        </div>
+        <div style="float: right;width: 60%;">
+            //à verifier
+            <b>apicalls</b>
+            <ul>
+                <li>_id : objectID</li>
+                <li>UserId : objectID</li>
+                <li>_typeHint : models.ApiCall</li>
+                <li>header ...</li>
+            </ul>
+        </div>
+    <hr>
     </blockquote>
 </article>
 </blockquote>
@@ -1898,6 +1932,21 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
 <article>
     <blockquote>
         <H2><a name="FPStampleDist">Architecture de Stample Distribuer</a></H2>
+        <h3>L'importance de Scala pour le passage de Stample en RDF</h3>
+
+        <p><b>Scardf</b> un API Scala fourni une connexion DSL(domain-specific language) pour écrire, traverser et l'integrer des graphes RDF.
+
+            à  developper ...</p>
+
+        <h3>Stample est unique ?</h3>
+
+        <p> En Ajoutant les notions de web sémantique dont je vais parler ça sera lunique platforme qui résoudre le
+            probléme de
+            la possession des
+            données disponible sur le web non stocker sur un serveur de l'entreprise quelque part dans le monde vous
+            pouvez les
+            avoir chez nous...à  developper
+        </p>
         <img src="img/stampleDist.png" style="width:70%; height:70% ;margin-left:80px;">
 
     </blockquote>
@@ -1950,6 +1999,7 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
             <li><a href="https://www.coursera.org/">Coursera : Functional programming principles in scala</a></li>
             <li><a href="https://github.com/metanote/Summary-report">Le rapport sur git projet open source</a></li>
             <li><a href="http://www.w3.org/standards/techs/owl#w3c_all">Ontology language OWL</a></li>
+            <li><a href="http://docs.mongodb.org/manual/reference/sql-comparison/">MongoDB vs SQL</a> </li>
         </ul>
     </blockquote>
 </article>

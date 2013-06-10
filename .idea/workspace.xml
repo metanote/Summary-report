@@ -12,10 +12,10 @@
     <file path="$PROJECT_DIR$/../Stample/stample-web/app/views/login.scala.html" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1369689526292" ignored="false" />
     <file path="/Home.htm" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1370810577778" ignored="false" />
     <file path="/a.dummy" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1370607362255" ignored="false" />
-    <file path="/style.css" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1370796794469" ignored="false" />
+    <file path="/style.css" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1370882008980" ignored="false" />
     <file path="/contact.php" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1370775795086" ignored="false" />
     <file path="/README.md" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1370798502242" ignored="false" />
-    <file path="/Home.html" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1370847837573" ignored="false" />
+    <file path="/Home.html" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1370891158442" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,7 @@
       <file leaf-file-name="Home.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="802" column="34" selection-start="33580" selection-end="33580" vertical-scroll-proportion="0.42526963">
+            <state line="2001" column="97" selection-start="82951" selection-end="82951" vertical-scroll-proportion="0.8518519">
               <folding>
                 <element signature="n#style#0;n#img#0;n#h1#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#1;n#h1#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -109,6 +109,12 @@
                 <element signature="n#style#0;n#iframe#0;n#p#11;n#blockquote#0;n#article#10;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#blockquote#0;n#article#10;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#blockquote#0;n#article#16;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -136,7 +142,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1359" column="12" selection-start="27424" selection-end="27424" vertical-scroll-proportion="0.0">
+            <state line="545" column="21" selection-start="8591" selection-end="8591" vertical-scroll-proportion="-12.076923">
               <folding />
             </state>
           </provider>
@@ -158,9 +164,9 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/contact.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Home.htm" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/Home.html" />
       </list>
     </option>
@@ -592,13 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1359" column="12" selection-start="27424" selection-end="27424" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/scalaMP.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -611,9 +610,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="545" column="21" selection-start="8591" selection-end="8591" vertical-scroll-proportion="-12.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="802" column="34" selection-start="33580" selection-end="33580" vertical-scroll-proportion="0.42526963">
+        <state line="2001" column="97" selection-start="82951" selection-end="82951" vertical-scroll-proportion="0.8518519">
           <folding>
             <element signature="n#style#0;n#img#0;n#h1#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#h1#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -634,6 +640,12 @@
             <element signature="n#style#0;n#iframe#0;n#p#11;n#blockquote#0;n#article#10;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#blockquote#0;n#article#10;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#blockquote#0;n#article#16;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
