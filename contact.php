@@ -1,4 +1,73 @@
-<?php 
+  <?php
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h3 class="page_title">Contactez moi !</h3>
+      <div class="page_content">
+          <div style="float:left; width:50%">
+            <h3>Des interrogations, un projet... ? <br>N'hésitez pas, je suis socialble ^_^</h3>
+            <form id="form" method="post" action="send.php">
+            <table>
+                <tr>
+                    <td>
+                        Nom
+                    </td>
+                    <td>
+                        <input type="text" name="contactname" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        E-mail<strong style="color:red">*</strong>
+                    </td>
+                    <td>
+                        <input type="email" name="mail" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Sujet<strong style="color:red">*</strong>
+                    </td>
+                    <td>
+                        <input type="text" name="subject" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Message <strong style="color:red">*</strong>
+                    </td>
+                    <td>
+                        <textarea name="message" cols="30"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" name="submit" value="Envoyer">
+            </form>
+            <br />
+            <a href="http://www.linkedin.com/profile/view?id=177613941&trk=hb_tab_pro_top">
+                <img class="imgsocial" src="img/linkedin-icon.png">
+            </a>
+            <a href="https://twitter.com/metanote123">
+                <img class="imgsocial" src="img/tweeter-icon.png">
+            </a>
+            <a href="">
+                <img class="imgsocial" src="img/viadeo.png">
+            </a>
+            <a href="">
+                <img class="imgsocial" src="img/google-Plus-icon.png">
+            </a>
+            <a href="http://www.facebook.com/moncef.benrejeb">
+                <img class="imgsocial" src="img/Facebook-logo.png">
+            </a>
+            <br />
+            <br />
+            Tous les champs en <span style="color:red">*</span> sont obligatoires
+
 
 // EDIT THE FOLLOWING LINE BELOW AS REQUIRED
 
@@ -93,4 +162,7 @@ header('Content-type: text/json');
 echo json_encode($return_array);
 die();
 
-?>
+
+    </body>
+    </html>
+  ?>
