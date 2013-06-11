@@ -593,9 +593,10 @@ aside hr {
 }
 #top {
 padding: 50px 0 100px;
-background-image: url('../img/BACKGROUND/noise_04.jpg');
+background-image: url('../img/BACKGROUND/random_grey_variations.png');
 color: #fff;
 }
+
 #top h1 {
   font-family: "HelveticaNeue-CondensedBold", "Open Sans Condensed", "Helvetica", sans-serif;
   font-weight: bold;
@@ -1068,6 +1069,7 @@ body > footer .credits {
   border-top: 1px solid #444;
   text-align: center;
   color: #777;
+  background-image: url('../img/BACKGROUND/ravenna.png');
 }
 @media only screen and (max-width: 960px) {
   body > footer .credits {
@@ -1309,9 +1311,9 @@ body > footer img {
   background: none;
 }
 .documentation aside {
-    left: 5px;
+    left: 19px;
     position: fixed;
-    top: 145px;
+    top: 130px;
     width: 226px;
 }
 #toolbar {
