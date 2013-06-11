@@ -592,9 +592,9 @@ aside hr {
     float: left;
 }
 #top {
-  padding: 40px 0 100px;
-  background:#999999;
-  color: #fff;
+padding: 50px 0 100px;
+background-image: url('../img/BACKGROUND/noise_04.jpg');
+color: #fff;
 }
 #top h1 {
   font-family: "HelveticaNeue-CondensedBold", "Open Sans Condensed", "Helvetica", sans-serif;
@@ -2515,4 +2515,12 @@ a[href="#todo"]:before {
   color: #fff;
   font-size: 8px;
   font-weight: bold;
+}
+
+@media print
+{
+aside
+{
+display:none;
+}
 }
