@@ -4,18 +4,21 @@
     <list default="true" id="4216c72e-7b1b-426a-a6a6-040b3c779125" name="Default" comment="" />
     <ignored path="ProjectReport.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1370773998261" ignored="false" />
+    <file path="/index.html" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1371233567030" ignored="false" />
     <file path="/main.css" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1369144843386" ignored="false" />
     <file path="/dummy.xml" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1368354673370" ignored="false" />
     <file path="/send.php" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1368715326926" ignored="false" />
-    <file path="/Dummy.txt" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1368799562771" ignored="false" />
+    <file path="/Dummy.txt" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1371053473810" ignored="false" />
     <file path="$PROJECT_DIR$/../Stample/stample-web/app/views/login.scala.html" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1369689526292" ignored="false" />
     <file path="/Home.htm" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1370810577778" ignored="false" />
     <file path="/a.dummy" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1370607362255" ignored="false" />
-    <file path="/style.css" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1370882008980" ignored="false" />
+    <file path="/style.css" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1371049686494" ignored="false" />
     <file path="/contact.php" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1370775795086" ignored="false" />
     <file path="/README.md" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1370798502242" ignored="false" />
-    <file path="/Home.html" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1370891158442" ignored="false" />
+    <file path="/Home.html" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1371333350503" ignored="false" />
+    <file path="$PROJECT_DIR$/../WorkSpace/Stample Mailer/stample-web/app/controllers/UsersController.scala" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1371232272913" ignored="false" />
+    <file path="/UsersController.scala" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1371054309626" ignored="false" />
+    <file path="$PROJECT_DIR$/../WorkSpace/Stample Mailer/stample-web/app/controllers/Application.scala" changelist="4216c72e-7b1b-426a-a6a6-040b3c779125" time="1371199080173" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,74 +79,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="send.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/send.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="2" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Home.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2006" column="0" selection-start="83006" selection-end="83006" vertical-scroll-proportion="-2.2916667">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#h1#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#1;n#h1#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#h3#0;n#blockquote#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#1;n#blockquote#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#blockquote#0;n#article#4;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#blockquote#0;n#article#5;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#1;n#blockquote#0;n#article#5;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#blockquote#0;n#article#9;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#blockquote#0;n#article#9;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#blockquote#0;n#article#9;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#blockquote#0;n#article#9;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#1;n#blockquote#0;n#article#9;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#p#0;n#blockquote#0;n#article#10;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#p#2;n#blockquote#0;n#article#10;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#p#11;n#blockquote#0;n#article#10;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#blockquote#0;n#article#10;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#blockquote#0;n#article#16;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contact.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="84" selection-start="2346" selection-end="2346" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="51" selection-start="3641" selection-end="3641" vertical-scroll-proportion="-6.9166665">
+            <state line="1372" column="13" selection-start="65143" selection-end="65143" vertical-scroll-proportion="16.791666">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+      <file leaf-file-name="Home.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="681" column="25" selection-start="11491" selection-end="11491" vertical-scroll-proportion="0.16452074">
-              <folding />
+            <state line="1834" column="41" selection-start="76461" selection-end="76461" vertical-scroll-proportion="0.6666667">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,12 +115,12 @@
         <option value="$PROJECT_DIR$/css/normalize.css" />
         <option value="$PROJECT_DIR$/pages/send.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/contact.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Home.htm" />
-        <option value="$PROJECT_DIR$/Home.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Home.html" />
       </list>
     </option>
   </component>
@@ -205,6 +158,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -281,7 +235,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -524,9 +477,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/send.php">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="2" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -540,9 +493,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/send.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="2" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0">
+        <state line="51" column="2" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/send.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="2" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/404.html">
@@ -577,77 +540,31 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="84" selection-start="2346" selection-end="2346" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="51" selection-start="3641" selection-end="3641" vertical-scroll-proportion="-6.9166665">
+        <state line="1372" column="13" selection-start="65143" selection-end="65143" vertical-scroll-proportion="16.791666">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/scalaMP.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/send.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="2" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="51" column="2" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2006" column="0" selection-start="83006" selection-end="83006" vertical-scroll-proportion="-2.2916667">
+        <state line="1834" column="41" selection-start="76461" selection-end="76461" vertical-scroll-proportion="0.6666667">
           <folding>
-            <element signature="n#style#0;n#img#0;n#h1#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#h1#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#h3#0;n#blockquote#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#1;n#blockquote#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#blockquote#0;n#article#4;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#blockquote#0;n#article#5;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#blockquote#0;n#article#5;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#blockquote#0;n#article#9;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#blockquote#0;n#article#9;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#blockquote#0;n#article#9;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#blockquote#0;n#article#9;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#blockquote#0;n#article#9;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#0;n#blockquote#0;n#article#10;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#2;n#blockquote#0;n#article#10;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#p#11;n#blockquote#0;n#article#10;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#blockquote#0;n#article#10;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#blockquote#0;n#article#14;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#blockquote#0;n#article#16;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="681" column="25" selection-start="11491" selection-end="11491" vertical-scroll-proportion="0.16452074">
-          <folding />
         </state>
       </provider>
     </entry>
