@@ -80,7 +80,6 @@ summary {
 body {
   line-height: 1;
   color: #000;
-  background: #fff;
 }
 
 h1 ul li a{
@@ -112,7 +111,8 @@ a img {
   border: none;
 }
 body {
-  background: #fff;
+    
+  background: url("../img/BACKGROUND/diagonal-noise.png");
   color: sand-text;
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: normal;
@@ -159,7 +159,6 @@ aside a:hover {
 .typo a[href^=http]:after,
 article a[href^=http]:after,
 aside a[href^=http]:after {
-  content: " ";
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -1015,8 +1014,7 @@ color: #fff;
   }
 }
 body > footer {
-  margin: 50px 0 0;
-  background: #343434;
+    background: url("../img/BACKGROUND/diagonal-noise.png");
   color: #fff;
   text-align: center;
 }
@@ -1066,10 +1064,8 @@ body > footer .credits {
   width: 880px;
   margin: 0 auto;
   padding: 40px 0;
-  border-top: 1px solid #444;
   text-align: center;
   color: #777;
-  background-image: url('../img/BACKGROUND/ravenna.png');
 }
 @media only screen and (max-width: 960px) {
   body > footer .credits {
