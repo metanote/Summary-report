@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SITE DE UN by Moncef </title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).scroll(function() {
+    if( $(this).scrollTop() > 130 ) {
+        $('.documentation aside').css({top:'0px'});
+    } else {
+        $('.documentation aside').css({top:'130px'});
+    }
+});
+    </script>
+    <style>
+        #content{
+            min-height: auto;
+        }
+        .contact img{
+            width: 35px;
+            height: 35px;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="documentation">
+
+<header id="top">
+    <h1>
+        <img src="img/logo1.png" style="height: 50px; left:20px;float: left; margin-left:20px;"/>
+        <img src="img/logo2.png" style="height: 50px; left:20px;float: right; margin-right:20px;"/>
+    </h1>
+
+    <div class="wrapper">
+        <h1 style="width: 300px;float: left;padding-top:20px;">
+            <ul>
+                <li><a href="home.html">Accueil</a></li>
+            </ul>
+        </h1>
+        <h1 style="width: 200px;float: right;padding-top:20px;">
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">À propos</a></li>
+            </ul>
+        </h1>
+    </div>
+
+</header>
+<section id="content">
+    <article>
+        <blockquote >
+        <h2>À propos de moi !</h2>
+
+        <p>
+            Je suis un étudiant en première année master web intelligence à 
+            <a href="http://portail.univ-st-etienne.fr/"> l'université
+                de Jean Monnet saint-etienne</a>. <br />
+            Je viens d'apprendre scala dans le cadre de mon stage au sein du Startup
+            <a href="https://stample.co/login"> Stample</a>.
+            <br>
+           <p> Je trouve que ce langage de programmation avancé (Scala) est le future langage dont je recommande tout
+            développeur interesser sur mon site.<br>
+            En effet il est beaucoup plus scalable, on peut dans 3 ligne de
+            codes faire ce qui demande 10 lignes de code Java.
+            </p><p>
+            Notre projet Stample est un réseau sociale distribuée qui répond au besoin de tout type
+            d'utilisateurs qui n'ont pas consiance du danger de centralisation des données qui peuvent
+            étre fatale add arguments++ <br>
+            Notre solution est developpé sur PlayFrameWork, Scala comme langage de programmation, MongoDB version
+            centraliser puis RDF version distribuée nous sommes une startup et nous profitant des
+            nouvelles technologies pour avoir une solution fiable et révolutionnaire.
+        </p>
+        <hr>
+        <pre></pre>
+
+    </blockquote>
+    </article>
+</section>
+
+
+<footer>
+    <div class="credits">
+        <p>
+            <img src="img/Stamplesky.png"><img src="img/Stampletext.png"> &COPY; 2013 ALL RIGHTS RESERVED MONCEF BEN
+            RAJEB Rapport Version BETA
+        </p>
+    </div>
+</footer>
+
+
+</body>
+</html>
