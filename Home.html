@@ -1591,7 +1591,7 @@ On peux aussi faire de la recherche en donnant une fonction Javascript <br>
 &lthttps://www.johonbreslin.com/foaf/foaf.rdf#me> <b> //la personne est identifier par un URI </b>
 a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes suivante : </b>
     foaf:name "John Berslin";  <b>//nom complet du person </b>
-    foaf:mbox &ltmailto:johnbreslin@deri.org>;      <b> //son adress mail </b>
+    foaf:mbox &ltmailto:johnbreslin@deri.org>;      <b> //son adress email </b>
     foaf:homepage &lthttp://www.johnberslin.com/>;   <b> //sa page d'acceuil </b>
     foaf:nick "cloud";                <b> //son pseudo </b>
     foaf:topic_interest &lthttp://wiki.dbpedia.org/Documentation>;<b>//le site dont il s'interesse </b>
@@ -1991,6 +1991,43 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
 </article>
 <article>
     <blockquote>
+        <H2><a name="work">Integration de SecureSocial & Signup sur Stample</a> </H2>
+        <p><b>SecureSocial </b>est un module d'authentification pour les applications sur Play Framework qui travail avec des services comme OAuth1, OAuth2 et OpenID.<br />
+            Il fournit ​​le support de boîte pour:
+            <ul>
+        <li>Twitter (OAuth1)</li>
+        <li>Google (OAuth2)</li>
+        <li>Username/Password with signup and reset password functionality...</li>
+            </ul>
+        </p>
+
+        <p>Après une formation est une phase d'apprentissage, j'ai eu l'accée au projet Stample sur GuitHub pour intégrer le secure social sur Stample.
+        C'etais pas aussi facile de comprendre au dépard le code et les diffrentes packages le passage des cases classes qui interroge des services implementer sous le package services.impl puis les repositorys et leurs implemetation repository.impl.<br />
+
+        En effet il y'a deux couches services, repository qui contiennent des traits on les implementes dans les sous packages .impl donc pour créer la collection confirmeUsers
+            j'avais besoin de créer un repository qui utilise des services et la méthode create, cela ma permet en utilisant le MailerPlugin
+        d'envoyer des mails l'hors de l'inscription et puis activer le compte utilisateur en cliquant sur me lien reçu dans sa boite mail mais c'est pas la meilleur façon de faire
+            car il faut se débrouiller pour ne pas avoir une dépendance vers un plugin play.
+        </p>
+        <p>J'avais besoin de reprendre le travail avec Jonathan sur une nouvelle branche new-securesocial </p>
+        <p>En gros il faut passer par trois étapes Do-It, Do-It-right, Do-It-fast.<br />
+        Nos besions c'est l'enregistrement avec un compte google, avec un mail, avec twitter.
+
+        </p>
+
+        <p>Pour l'integration de secure-social :</p>
+        <p>Verification de compilation, integration basic de secure Social dans Stample. <br />
+        Une écriture basic dans la mémoire et implémentation de UserService.  <br />
+        Working Wiring : Authentification avec google / Authentification avec email. <br />
+        Ajout du template signUp email.
+        </p>
+        <p>Comme démo de mon travail je vais présenter la partie de securesocial que j'ai integrer sur stample</p>
+
+        <p><b>Probléme de token et de memory</b></p>
+    </blockquote>
+</article>
+<article>
+    <blockquote>
         <H2><a name="ApportPerso"> Apports Personnels</a></H2>
 
         <p>Durant ces trois mois de stage qui continuera jusqu'a Septembre, j'ai appri plusieurs concept de scala et de
@@ -2037,13 +2074,29 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
             <li><a href="https://www.coursera.org/">Coursera : Functional programming principles in scala</a></li>
             <li><a href="https://github.com/metanote/Summary-report">Le rapport sur git projet open source</a></li>
             <li><a href="http://www.w3.org/standards/techs/owl#w3c_all">Ontology language OWL</a></li>
+            <li><a href="http://securesocial.ws/guide/getting-started.html"></a>SecureSocial documentations </li>
             <li><a href="http://docs.mongodb.org/manual/reference/sql-comparison/">MongoDB vs SQL</a> </li>
         </ul>
         <hr>
-        <pre></pre>
+
     </blockquote>
 </article>
+<article><blockquote>
 
+      <H2><a name="Biblio">Bibliographie</a></H2>
+    <ul>
+        <li>Semantic web for the working ontologist effective modeling in RDFS and OWL DEAN ALLEMANG JIM HENDLER</li>
+        <li>Functional Programing in scala PAUL CHIUSANO RUNA BJARNASON</li>
+
+        <li>Programming in Scala MARTIN ODERSKY</li>
+        <li>Scala for the impatient</li>
+        <li>scala in depth</li>
+        <li>Programming Scala</li>
+
+    </ul>
+
+    <pre></pre>
+</blockquote></article>
 <aside>
     <h3>Sommaire</h3>
     <ul>
