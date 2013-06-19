@@ -43,20 +43,25 @@
 <article>
     <H2><A name="intro"></A></H2>
     <blockquote>
-
+            <br />
+        <br />
         <h3>Rapport de Stage<span style="margin-left: 195px;"></span>
             Année Universitaire 2012/2013</h3>
 
         <h3 style="text-align: center;">
+            <br />
+            <br />
             Implémentation de la Linked Data platform (RDF, WebID) dans le backend Scala de l'application web Stample
         </h3>
+        <br />
         <hr>
+       <br />
         <strong>Formation : </strong>Master Web Intelligence<br/>
         <strong>Université : </strong> Université de Jean Monnet Saint-Etienne<br/>
         <strong>Par : </strong> Moncef BEN RAJEB<br/>
-
+             <br />
         <hr>
-
+                   <br />
         <b>Ecadrants de Stage</b><br/>
         <strong>Tuteur de stage : </strong>Henry STORY<br/>
         <strong>Tuteur pédagogique : </strong>Professeur Pierre MARET<br/>
@@ -65,7 +70,27 @@
 </article>
 
 <article>
-    <blockquote><H2><A name="remerciement">Remerciement</A></H2></blockquote>
+    <blockquote><H2><A name="remerciement">Remerciement</A></H2>
+    <p>
+        Avant de vous décrire ce que j'ai appris durant de ma première expérience au milieu professionnel,
+        il paraît tout à fait normal de commencer par des remerciements, à ceux qui m'ont appris durant ces trois premier
+        mois de stage et à la famille Story de cet accueil chaleureux durant cette période.
+       </p> <p>Aussi je tiens à exprimer mes vifs remerciment à mon encadreur de stage Henry Story pour l'aide déterminante qu'il ma
+        accordée, pour l'intérêt qu'il a porté à mon travail et mon apprentissage, et pour m’avoir accompagné tout au long de cette
+            expérience avec beaucoup de patience et de pédagogie.   </p>
+           <p>
+        Je remercie aussi l’ensemble des personnes au labo d'édition et l'équipe Stample avec lesquelles j'ai travaillé pour leur soutien
+        et leurs conseils aussi bien dans la partie implémentation que dans la rédaction de ce rapport.
+              </p>
+        <p>
+        Je remercie aussi Pierre Maret, mon tuteur de stage pédagogique, pour m’avoir orienté à travailler avec Stample et de son soutien tout au long de cette expérience.
+       <br /> Enfin, je remercie tous les professeurs de l'université de Jean Monnet, et toute presonne qui s'interesse au contenu de ma page web, Merci a tous.
+    </p>
+
+
+
+
+    </blockquote>
 
 
 </article>
@@ -90,7 +115,7 @@
         </p>
 
         <p>
-            Ce stage à  été une bonne opportunité pour moi d'apprendre Scala, PlayFrameWork et de voir en proche la vie
+            Ce stage a  été une bonne opportunité pour moi d'apprendre Scala, PlayFrameWork et de voir en proche la vie
             profesionnelle avec une Startup qui est notament differente d'une
             entreprise ainsi que d'apprendre la philosophie du web et de travailler avec un groupe très ambitieux.
         </p>
@@ -102,7 +127,7 @@
             aider les autres à  apprendre plus vite.
             Ce qui permet à  mes professeurs, mes collegues et mes amis de naviguer facilement pour voir le contenu du
             rapport et profiter de mes indexs disponible en ligne
-            de plus me contacter pour des interrogations et ils peuvent accà der au source disponible sur mon compte
+            de plus me contacter pour des interrogations et ils peuvent accèder au source disponible sur mon compte
             GuitHub pour modifier ou me proposer des suggestions.
             Je recommande cette méthode à  tout informaticiens qui veux montrer ces talents en programmmant aussi le
             rapport du Stage.
@@ -122,8 +147,8 @@
             place
             tous les concepts de programmation fonctionnelle et orienté objet Scala qui ma pris une bonne période pour
             les apprendre ainsi que les autres outils qu'on travail avec puis de décrire la
-            solution actuelle centraliser de Stample et de décortiquer les différentes fonctionnalitès puis
-            d'analyser les problémes.
+            solution actuelle centraliser de Stample, décortiquer les différentes fonctionnalitès ,
+            analyser les problémes, et décrire l'intégration de secureSocial pour Stample.
         </p>
 
 
@@ -174,14 +199,14 @@
         <H2><a name="EA"> Etat de l'art </a></H2>
 
         <p>
-            Comme Romain Blin à  déjà  expliquer dans sa thése de premier année master l'année dérnier en proposant ça
+            Comme Romain Blin a  déjà  expliqué dans sa thése de premier année master l'année dérniere en proposant ça
             propre solution LifeShare dans le cadre
             d'un stage de recherche au laboratoire Télécom Claude Chappe. Je travaille avec Henry Story de mettre en
             place un Stample décentraliser.
 
         </p>
 
-        <p>La plateforme Stample est développer en Scala, Json, HTML5 et CSS3, sur le Framework Play et avec MongoDB NoSQL database.</p>
+        <p>La plateforme Stample est développé en Scala, Json, HTML5 et CSS3, sur le Framework Play et avec MongoDB NoSQL database.</p>
         <p>Durant ma premiére partie de Stage j'ai subit une formation en Scala commençant par le livre de Odersky Programming in Scala puis en faisant les exercices sur coursera ensuite en découvrant le Framework Play avec
         des petites applications.</p>
         <p>L'apprentissage de Scala ma pris une bonne durée vu que j'avais pas des bonnes connaissance des languages de programmation
@@ -354,21 +379,20 @@
                 <b>1997 : </b>
                 Martin Odersky et Philip Wadler publier la spécification du langage Pizza à  PoOL (Principles of
                 Programming
-                Language)
-            <li>
-                Pizza est un superset de Java, et se traduit par des sources Java comme une représentation intermédiaire
-            </li>
-            <li>
+                Language).
+                <br />
+                <br />
+                Pizza est un superset de Java, et se traduit par des sources Java comme une représentation intermédiaire.
+                <br />
                 Features parametric polymorphism (a.k.a. "generics"), algebraic types (a.k.a. "case classes") et
                 higher-order
-                functions
+                functions.
             </li>
             <li>
                 <b>1998 : </b>
-                Bracha, Odersky, Stoutamire and Wadler publie GJ à  OOPSLA.
+                Bracha, Odersky, Stoutamire and Wadler publie GJ à  OOPSLA.   <br />
                 GJ adopte génériques de Pizza, supprime case classes et higher-order functions
-            </li>
-            <li>
+            <br />
                 Compile directement à  bytecode JVM, éliminant traduction source Java.
             </li>
             <li>
@@ -379,14 +403,15 @@
                 <b>2004</b>
                 Sun Microsystems Java versions 1.5, intégrant des génériques de GJ
             </li>
-            <li>
-                EN attendant...
-            </li>
+
+           <h4>En attendant...</h4>
+
+
             <li>
                 <b>Milieu des années 1980 : </b>
-                Beaucoup de langages fonctionnels dans la recherche, les dérivés de Scheme, ML et Miranda
-            </li>
-            <li>
+                Beaucoup de langages fonctionnels dans la recherche, les dérivés de Scheme, ML et Miranda.
+           <br />
+               <br />
                 Caractéristiques du langage explorés, y compris l'inférence de type, l'évaluation paresseuse et types de
                 rang
                 supérieur
@@ -645,14 +670,14 @@
             proposer par paris scala user group que je vous invite à  les faires.
         </p>
 
-        <h3>A propos de coursera</h3>
+        <h3>À propos de coursera</h3>
 
         <p>
             une fois qu'on à  toutes les outils sont bien installer sur notre machine pour programmer en scala est ça
             c'est bien expliquer sur le site
             on va recevoir chaque semaine des cours et des exercices, après la resolution des exercices il est
             indisponsable de lancer les tests pour voir
-            si notre solution répond bien au besion puis nous pouvons faire un submit pour avoir la note sur 10 de
+            si notre solution répond bien au besoin puis nous pouvons faire un submit pour avoir la note sur 10 de
             l'exercice comme ci-dessous
         </p>
     <pre>
@@ -961,9 +986,9 @@ None
     }
 </pre>
 
-<b>==>Le mot-clé sealed devant un trait facilite le pattern matching,un sealed trait peut être peut étre prolonger
+<b>==>Le mot-clé sealed devant un trait facilite le pattern matching,un sealed trait peut être prolonger
     que
-    dans le méme fichier que sa déclaration</b>
+    dans le même fichier que sa déclaration</b>
 
 <br>
 
@@ -983,8 +1008,8 @@ La classe List repose sur deux cases class
 </ul>
 y::ys => represente une list dans le head est y (premier element de la list),suivi du tail ys le reste de la list
 (head,tail) sont deux fonctions et isEmpty une fonction qui renvoie true si la list est vide false dans le cas
-contraire
-
+contraire.
+<br />
 Des fonctions de plus haut niveau exemple : x:Int => x+1 est équivalent à  f(x:Int)={x+1}
 <pre>Exemple de fonctions : map, flatmap, flatten ...</pre>
 <h3>Les Options</h3>
@@ -999,6 +1024,7 @@ Des fonctions de plus haut niveau exemple : x:Int => x+1 est équivalent à  f(
     <pre>
         Imaginons qu'on cherche une personne dans un graphe RDF
         def findImage(CIN :Int)=Option[Image]
+        =>On peut avoir comme résultat un None ou bien un Some de quelques choses.
     </pre>
 
 <h3>Le pattern matching</h3> <br>
