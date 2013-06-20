@@ -42,7 +42,7 @@ if(isset($_POST['submit'])) {
 
     //If there is no error, send the email
     if(!$hasError) {
-        $emailTo = "metanote123@gmail.com";
+        $emailTo = "ton-mail@ton-site.tld";
         $body = "Name: $name\n\nEmail: $email\n\nSubject: $subject\n\nComments:\n$comments";
         $headers = "From: Site de l'APE $emailTo\nReply-To: $email";
         mail($emailTo, $subject, $body, $headers);
