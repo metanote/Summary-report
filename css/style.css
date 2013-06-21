@@ -100,6 +100,10 @@ table {
   border-spacing: 0;
   vertical-align: middle;
 }
+.imgabout{
+	float:left;
+          margin: -10px 10px 10px 0;
+}
 caption,
 th,
 td {
@@ -109,6 +113,17 @@ td {
 }
 a img {
   border: none;
+}
+.alert_succes{   background-color: #DFF0D8;
+    border-color: #D6E9C6;
+    color: #468847;
+    padding: 5px;
+}
+.alert_erreur{
+        background-color: #F2DEDE;
+    border-color: #EED3D7;
+    color: #B94A48;
+    padding: 5px;
 }
 body {
     
@@ -138,7 +153,7 @@ aside {
 .typo a,
 article a,
 aside a {
-  color: #999999;
+  color: #3B5998;
 }
 .typo a:hover,
 article a:hover,
@@ -148,7 +163,14 @@ aside a:hover {
 .typo a,
 article a,
 aside a {
-  color: #999999;
+  color: #3B5998;
+}
+.livre{
+    width: auto;
+    float: left ;
+    text-align: center;
+}.clear{
+    clear: both;
 }
 .typo a:hover,
 article a:hover,
@@ -174,7 +196,17 @@ aside a[href^=http]:after {
     -moz-background-size: 12px 12px;
     background-size: 12px 12px;
   }
+
 }
+
+#rightcontenu{
+    top: 150px;
+    right: 5%;
+    position: fixed;
+    width: 103px;
+    text-align: center;
+}
+
 .typo h1,
 article h1,
 aside h1,
@@ -584,11 +616,13 @@ aside hr {
 .imgico{
     width: 50px;
 }
-
+#rightcontenu li{
+    border: 1px solid black ;
+    margin: 1px;
+    padding: 5px;
+}
 .imgbook {
-    height: 220px;
-    width: 196px;
-    float: left;
+    width: 80px;
 }
 #top {
 padding: 50px 0 100px;

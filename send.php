@@ -1,8 +1,6 @@
 <?php
-
-$hasError = false;
-$emailSent = false;
-
+$hasError = false ;
+$emailSent = false ;
 //If the form is submitted
 if(isset($_POST['submit'])) {
 
@@ -21,12 +19,12 @@ if(isset($_POST['submit'])) {
     }
 
     //Check to make sure sure that a valid email address is submitted
-    if(trim($_POST['email']) == '')  {
+    if(trim($_POST['mail']) == '')  {
         $hasError = true;
-    } else if (!preg_match("/^[_\.0-9a-zA-Z-]+@([0-9a-zA-Z][0-9a-zA-Z-]+\.)+[a-zA-Z]{2,6}$/i", trim($_POST['email']))) {
+    } else if (!preg_match("/^[_\.0-9a-zA-Z-]+@([0-9a-zA-Z][0-9a-zA-Z-]+\.)+[a-zA-Z]{2,6}$/i", trim($_POST['mail']))) {
         $hasError = true;
     } else {
-        $email = trim($_POST['email']);
+        $email = trim($_POST['mail']);
     }
 
     //Check to make sure comments were entered
@@ -42,11 +40,17 @@ if(isset($_POST['submit'])) {
 
     //If there is no error, send the email
     if(!$hasError) {
-        $emailTo = "ton-mail@ton-site.tld";
+        $emailTo = "metanote123@gmail.com";
         $body = "Name: $name\n\nEmail: $email\n\nSubject: $subject\n\nComments:\n$comments";
         $headers = "From: Site de l'APE $emailTo\nReply-To: $email";
-        mail($emailTo, $subject, $body, $headers);
-        $emailSent = true;
+        if(mail($emailTo, $subject, $body, $headers)){
+            echo 'mail';
+        }  else {
+            echo 'erreur mail';
+        }
+        header('location:home.php?msg=true');
+    }  else {
+        header('location:contact.php?msg=false');
     }
 }
 ?>
