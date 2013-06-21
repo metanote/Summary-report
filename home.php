@@ -42,25 +42,27 @@
 
 </header>
     <div id="rightcontenu">
-        <h3>Livres de Scala</h3>
-        
+        <h3>Livres</h3>
+        <br />
         <ul>
             <li>
-                Programming in Scala    
-                <img class="imgbook" src="img/PinSCover500x500.gif">
+                <a href="http://www.amazon.fr/Programming-Scala-Martin-Odersky/dp/0981531644">     
+                <img class="imgbook" src="img/Pscala.png"></a>
             </li>
+            <li><a href="http://www.amazon.fr/Programming-Scala-Martin-Odersky/dp/0981531644">     
+                Programming in Scala</a></li>
             <li>
-                Scala for the impatient<br>
-                <img class="imgbook" src="img/cover.png">
+                <a href="http://www.amazon.fr/Semantic-Web-Working-Ontologist-Effective/dp/0123735564">  
+                <img class="imgbook" src="img/sweb.jpg"></a>
             </li>
+            <li> <a href="http://www.amazon.fr/Semantic-Web-Working-Ontologist-Effective/dp/0123735564">  
+               Semantic web for the working ontologist</a></li>
             <li>
-                scala in depth<br>
-                <img class="imgbook" src="img/11353552.jpg">
+                <a href="http://www.amazon.fr/The-Social-Semantic-John-Breslin/dp/3642011713">  
+                <img class="imgbook" src="img/ssweb.jpg"></a>
             </li>
-            <li>
-                Programming Scala<br>
-                <img class="imgbook" src="img/51hfd66G1pL._SL500_AA300_.jpg">
-            </li>
+            <li>   <a href="http://www.amazon.fr/The-Social-Semantic-John-Breslin/dp/3642011713">  
+             The Social Semantic Web</a></li>
         </ul>
 
 
@@ -1591,8 +1593,8 @@ On peux aussi faire de la recherche en donnant une fonction Javascript <br>
             le marché commercial (ou seulement à  titre expérimental). Elle est en phase plus ou moins longue de
             développement
             d'un produit,
-            de test d'une idée, de validation d'une technologie ou d'un modèle économique...
-            le risque d'échec est décuplé par rapport à  des entreprises traditionnelles.<br>
+            de test d'une idée, de validation d'une technologie ou d'un modèle économique...<br />
+            Le risque d'échec est décuplé par rapport à  des entreprises traditionnelles.<br>
             Lorsqu'on parle d'une Startup on pense toujours à  des investisseurs, des risques et des nouvelles
             idées...<br>
             On trouve le plus grand nombre des Startups dans le monde de l'informatique au Silicone Valley (Etats-Unis)
@@ -1608,13 +1610,13 @@ On peux aussi faire de la recherche en donnant une fonction Javascript <br>
 
         <h3>Participation au OuiShare</h3>
 
-        <p>Nous avons participés au ouiShare à  paris pour présenter Stample samedi "4" et dimanche "5 mai", j'ai assité
+        <p>Nous avons participé au ouiShare Fest à  Paris pour présenter Stample samedi "4" et dimanche "5 mai", j'ai assité
             à  des
             présentations
             de plusieurs startup, Henry a  présenté webID et le format RDF, Sacha a 
             présenté
             Stample.
-            C'est une bonne opportunité pour rencontrer des développeurs et voir les nouvelles idées.
+            C'est une bonne opportunité pour rencontrer des développeurs développeurs et échanger avec des porteurs de projets et des acteurs très innovants..
         </p>
         <br/>
         <br/>
@@ -1626,9 +1628,21 @@ On peux aussi faire de la recherche en donnant une fonction Javascript <br>
         <h3>Thèse Alexandre Monnin Philosophy du Web</h3>
 
         <p>J'ai eu le plaisir avec Henry d'assister à la soutenance de Alexandre Monnin sur la philosophy du web au
-            Sorbonne, dont
-            il a mis en question l'architecture du web, aux ontologies, au Web social et sémantique, à la science
-            contributive et à l’Open data.</p>
+            Sorbonne. Dans sa thèse 
+            et la philosophie du web à la Sorbonne. Dans sa thèse, il prend acte de l’importance du Web 
+
+
+
+d’un point de vue philosophique, à la fois comme objet de recherche, qui, dans le sillage du 
+
+
+
+Web Sémantique et de l’architecture du Web, entre en résonance avec les problématiques 
+
+
+
+classiques de la métaphysique et de la philosophie du langage, et au regard du devenir de la philosophie elle-même.
+            </p>
         <img src="img/theseAlexandre.jpg"/>
         <br/>
         <h4 style="text-align:center">Figure 5. Thèse Philosophie du web Sorbonne</h4>
@@ -1768,7 +1782,7 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
         <H2><A name="ArchiStamp">Architecture de STAMPLE</A></H2>
 
         <p>L'architecture actuelle de stample est suite aux travaux de Edward et Sébastien qui ont développer le backEnd de stample
-        Sébastien (développeur Scala) et Edward, Amélie (Design, JavaScript) durant ces deux dérnières années.
+        durant ces deux dérnières années.
         </p>
 
 
@@ -1846,19 +1860,44 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
 
         <p>Quelques trucs à  prévoir:</p>
         <ul>
-            <li>Voir si il faut pas passer sur un SGBD classique pour certaines tables (mongo c'est bien pour un doc non
-                structuré comme un stample mais pour le coté consistance c'est moyen)
+            <li>
+
+Voir si il ne faut pas passer sur un Système de base de données classique 
+
+
+
+pour certaines tables (mongo, c'est bien pour un doc non structuré comme un 
+
+
+
+Stample mais moins pour le coté consistance)
+
+
             </li>
 
-            <li> Integration continue (Jenkins?) + repository de déploiement (Nexus?)</li>
+            <li> Intégration continue, Jenkins est envisagé, comme repository de déploiement, 
+
+
+
+Nexus est envisagé.</li>
             <li>Split de l'application en plusieurs modules SBT</li>
-            <li>Mise en place d'une infra de notification temps réel scalable (A définir: percolator d'ElasticSearch,
-                RabbitMQ,Kafka ou Akka pour le messaging entre serveurs web, websockets...)
-            </li>
+            <li>
+
+Mise en place d'une infra de notification en temps réel scalable (A définir: 
+
+
+
+percolator d'ElasticSearch, RabbitMQ,Kafka ou Akka pour le messaging entre 
+
+
+
+serveurs web, websockets...)
+
+             </li>
         </ul>
         <h3>Structure des collections</h3>
 
-        <p>Stample structure les données dans 6 collections differentes de la façon suivante</p>
+        <p>Stample structure les données dans des collections differentes de la façon suivante :</p>
         <div style="float: left;width: 40%;">
 
         <b>categories</b>
@@ -1931,33 +1970,8 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
         </ul>
             </div>
         <hr>
-        <div style="float: left;width: 40%;">
-            //Ajouter la structure
-            <b>category_sharings</b>
-            <ul>
-                <li>_ID : objectID</li>
-                <li>UserID : objectID</li>
-            </ul>
-        </div>
-        <div style="float: right;width: 60%;">
-            //à verifier
-            <b>apicalls</b>
-            <ul>
-                <li>_id : objectID</li>
-                <li>UserId : objectID</li>
-                <li>_typeHint : models.ApiCall</li>
-                <li>header ...</li>
-            </ul>
-        </div>
-        <div style="float: left;width: 40%;">
-            <b>confirmeUsers</b>
-            <ul>
-                <li>_ID : objectID</li>
-                <li>email : String</li>
-                <li>key : String</li>
-            </ul>
-        </div>
-    <hr>
+        
+    
     </blockquote>
 </article>
 </blockquote>
@@ -1965,21 +1979,21 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
 
 <article>
     <blockquote>
-        <H2><a name="FPStample">Les Fonctionnalitées de la platforme Stample </a></H2>
+        <H2><a name="FPStample">Les Fonctionnalités de la platforme Stample </a></H2>
 
         <h3>une petite introduction :</h3>
 
-        <p>Une fois que vous êtes logué correctement sur Stample sachant que jusqu'à maintenant ce n'est pas possible
+        <p>Une fois que vous êtes correctement logué sur Stample, sachant que jusqu'à maintenant cela n'est pas possible
             pour des
-            utilisateurs simple il faut un code secret pour la création d'un compte, vous trouverez une interface qui se
-            ressemble à un système de fichiers comme ci-dessous et vous aurez des scripts qui vous guide à découvrir ces
-            fonctionnalités lors de la premier visite.</p>
+            utilisateurs simple (il faut un code secret pour la création d'un compte), vous trouverez une interface qui
+            ressemble à un système de fichiers comme ci-dessous et vous trouverez des scripts qui vous guide à découvrir ces
+            fonctionnalités lors de la première visite.</p>
 
         <p>Stample est un peu comme un article. Il peut s'agir d'une combinaison de toutes les choses que vous
             trouverez sur l'Internet: texte, images, vidéos, etc ..
         </p>
 
-        <p>Il a également «métadonnées»: des choses comme une url source, un auteur, une date de création, mais aussi
+        <p>On trouve également des «métadonnées»: des éléments comme une url source, un auteur, une date de création, mais aussi
             des références personnelles comme un résumé, mots-clés, notes, commentaires, et plus encore.
         </p>
 
@@ -1989,7 +2003,7 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
         <h3>Contenu de la plateforme (centralisée jusqu'à présent) :</h3>
         <img src="img/MAIN.png">
 
-        <h3>Description des principaux fonctionnalité :</h3>
+        <h3>Description des principales fonctionnalités :</h3>
         <img src="img/edit.png"><b>Créer un nouveau Stample </b>
 
         <p><br/>
@@ -2069,10 +2083,18 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
         <h3>Mon compte sur Stample avec mes Articles</h3>
         <img src="img/Stampcompte.png">
 
-        <p>Sur Mon compte qui contient maintenant un contenus je peux faire beaucoup de foctionnalités comme filtrer mes
-            articles (
-            image, contenu, titre ...), organiser mes articles, rechercher, supprimer ...
+        <p>
 
+
+            Sur Mon compte, qui contient maintenant un contenu, j’ai beaucoup de fonctionnalités 
+
+
+
+comme filtrer mes articles ( image, contenu, titre ...), organiser mes articles, rechercher, 
+
+
+
+supprimer ...
         </p>
     </blockquote>
 </article>
@@ -2105,31 +2127,81 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
             </ul>
         </p>
 
-        <p>Après une formation est une phase d'apprentissage, j'ai eu l'accée au projet Stample sur GuitHub pour intégrer le secure social sur Stample.
-        C'etais pas aussi facile de comprendre au départ le code et les diffrentes packages les cases classes qui interroge des services implementer sous le package services.impl puis les repositorys et leurs implemetation repository.impl.<br />
-
-        En effet il y'a deux couches services, repository qui contiennent des traits on les implementes dans les sous packages .impl donc pour créer la collection confirmeUsers
-            j'avais besoin de créer un repository qui utilise des services et la méthode create, cela ma permet en utilisant le MailerPlugin
-        d'envoyer des mails l'hors de l'inscription et puis activer le compte utilisateur en cliquant sur me lien reçu dans sa boite mail mais c'est pas la meilleur façon de faire
-            car il faut se débrouiller pour ne pas avoir une dépendance vers un plugin play.
-        </p>
-        <p>J'avais besoin de reprendre le travail avec Jonathan sur une nouvelle branche new-securesocial </p>
-        <p>En gros il faut passer par trois étapes Do-It, Do-It-right, Do-It-fast.<br />
-        Nos besoins c'est l'enregistrement avec un compte google, un mail et twitter.
-
-        </p>
-
-        <p>Pour l'integration de secure-social :</p>
-        <p>Verification de compilation, integration basic de secure Social dans Stample. <br />
-        Une écriture basic dans la mémoire et implémentation de UserService.  <br />
-        Working Wiring : Authentification avec google / Authentification avec email. <br />
-        Ajout du template signUp email.
-        </p>
+        <p>Après une formation et une phase d'apprentissage, j'ai eu l'accès au projet Stample sur GuitHub pour intégrer le secure-social sur Stample.
+       pour intégrer le securesocial sur Stample. Au départ, il n’était pas si facile de comprendre 
 
 
 
-        <p><b>Probléme de token et de memory</b></p>
+le code et les différents packages, le passage des cases classes qui interroge des services 
 
+implémentés sous le package services.impl, puis les repositories et leurs implémentations repository.impl.
+       
+        En effet il y'a deux couches services, repository qui contiennent des traits : on les implementes dans les sous packages .impl donc pour créer la collection confirmeUsers.
+            J'avais besoin de créer un repository qui utilise des services et la méthode create, cela m'a permis en utilisant le MailerPlugin
+  d'envoyer des mails lors de l'inscription, et d’activer le compte utilisateur en 
+
+
+
+cliquant sur le lien reçu dans ma boite mail. Cependant, cela n’est pas la meilleur façon de 
+
+
+
+faire, car il faut se débrouiller pour ne pas avoir de dépendance vers un plugin play.
+
+
+<p>
+J'avais besoin de reprendre le travail avec Jonathan sur une nouvelle branche newsecuresocial
+
+</p>
+<p>
+En gros il faut passer par trois étapes Do-It, Do-It-right, Do-It-fast.
+
+<br />
+
+Nos besoins sont l'enregistrement avec un compte google, avec un mail, avec Twitter.
+
+</p>
+<p>
+Pour l'intégration de secure-social :
+<br />
+
+
+Vérification de compilation, intégration basique de secure Social dans Stample. 
+
+
+<br />
+Une écriture basique dans la mémoire et implémentation de UserService. 
+
+<br />
+
+Working Wiring : Authentification avec google / Authentification avec email. 
+
+<br />
+
+Ajout du template signUp email.
+
+<br />
+
+Puis de résoudre le robléme de token et de memory
+
+<h4>Stample est-il unique ?</h4>
+<p>
+
+
+En ajoutant les notions de web sémantique dont je vais parler, ce sera l’unique plateforme 
+
+
+
+Web en mesure de résoudre simultanément le problème du contrôle de ses données 
+
+
+
+personnelles, celui de la fragmentation de ses information, et celui de la collaboration avec 
+
+
+
+d’autres acteurs autonomes.
+</p>
    <h3>Les taches à coûrt terme</h3>
         <ul>
             <li>Restore password</li>
@@ -2137,20 +2209,6 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
             <li>Recevoir des emails de notifications</li>
         </ul>
     <br />
-        <img src="img/trello.png">
-        <br/>
-        <h4 style="text-align:center">Figure 8. Trello distribution des tâches</h4>
-
-
-        <br />
-        <br />
-        <H3>Stample Future development</H3>
-        <p>Nous avons prévu des taches pour le mois d'avril qui ne sont pas encore achevé, nous sommes un peut en retard
-        sur notre calendrier que vous trouverez ci-dessous.
-        </p>
-    <img src="img/calendrier.png">
-        <br/>
-        <h4 style="text-align:center">Figure 8. Future development</h4>
 
     </blockquote>
 
@@ -2159,22 +2217,23 @@ a foaf Person; <b>//la personne est un foaf:person qui contient les proprietes s
     <blockquote>
         <H2><a name="ApportPerso"> Apports Personnels</a></H2>
 
-        <p>Durant ces trois mois de stage qui continuera jusqu'a Septembre, j'ai appri plusieurs concept de la programmation fonctionnelle et de
+        <p>Durant ces trois mois de stage qui continuera jusqu'à Septembre, j'ai appris plusieurs concept de Scala, de
             Linked
             Data la philosophie du web
             sémantique et d'écrire des tests. </p>
 
         <p>
             Ce stage est une opportunité unique qui va me permettre de commancer ma deuxième année de master
-            à laise, vu
-            qu'il touche vraiment du web intelligence.</p>
+           de master sereinement, étant donné qu'il touche réellement au web intelligence.</p>
 
         <p>
-            Le travaille avec PlayFramework, scala a renforcé mes
-            connaissances et qui va améliorer mon savoir faire.
-            Un stage chez une StartUp m'apporter aussi beaucoup de choses la voulanter, la patience, et tout un
-            vocabulaire
-            d'investisseur, lever de fond...
+            Le travaille avec PlayFramework, scala va renforcer mes
+            connaissances et améliorer mon savoir-faire.<br />
+            Un stage chez une Start-Up m’a également beaucoup apporté, la volonté, la patience, et tout un vocabulaire 
+
+
+
+d'investisseurs, levée de fonds... 
         </p>
 
     </blockquote>

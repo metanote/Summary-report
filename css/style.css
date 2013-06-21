@@ -153,7 +153,9 @@ aside {
 .typo a,
 article a,
 aside a {
-  color: #3B5998;
+  color: #293e6a;
+  font-style : italic;
+  font-weight : bold;
 }
 .typo a:hover,
 article a:hover,
@@ -163,7 +165,10 @@ aside a:hover {
 .typo a,
 article a,
 aside a {
-  color: #3B5998;
+  color: #293e6a;
+color: #293e6a;
+  font-style : italic;
+  font-weight : bold;
 }
 .livre{
     width: auto;
