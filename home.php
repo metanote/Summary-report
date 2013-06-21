@@ -2000,9 +2000,6 @@ serveurs web, websockets...)
         <p>Vous pouvez créer un Stample vide de votre compte, à écrire votre propre contenu, ou à partir de n'importe
             quelle page sur Internet, pour sauvegarder les choses qui comptent pour vous.</p>
 
-        <h3>Contenu de la plateforme (centralisée jusqu'à présent) :</h3>
-        <img src="img/MAIN.png">
-
         <h3>Description des principales fonctionnalités :</h3>
         <img src="img/edit.png"><b>Créer un nouveau Stample </b>
 
@@ -2080,22 +2077,7 @@ serveurs web, websockets...)
             Cliquez sur le coin supérieur droit de chaque stample: afficher le menu contextuel. <br/>
         </p>
 
-        <h3>Mon compte sur Stample avec mes Articles</h3>
-        <img src="img/Stampcompte.png">
-
-        <p>
-
-
-            Sur Mon compte, qui contient maintenant un contenu, j’ai beaucoup de fonctionnalités 
-
-
-
-comme filtrer mes articles ( image, contenu, titre ...), organiser mes articles, rechercher, 
-
-
-
-supprimer ...
-        </p>
+    
     </blockquote>
 </article>
 <article>
